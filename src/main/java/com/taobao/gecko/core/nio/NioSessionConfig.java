@@ -28,7 +28,7 @@ import com.taobao.gecko.core.statistics.Statistics;
 
 
 /**
- * Nio session配置�?
+ * Nio session閰嶇疆绫?
  * 
  * @author boyan
  * 

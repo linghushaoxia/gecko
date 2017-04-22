@@ -44,7 +44,7 @@ import com.taobao.gecko.service.notify.response.NotifyDummyAckCommand;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-21 ÏÂÎç02:25:29
+ * @since 1.0, 2009-12-21 ä¸‹åˆ02:25:29
  */
 
 public class DefaultConnectionUnitTest {
@@ -137,7 +137,7 @@ public class DefaultConnectionUnitTest {
 
             public void onResponse(final ResponseCommand responseCommand, final Connection conn) {
                 Assert.assertNotSame(response, responseCommand);
-                Assert.assertEquals("µÈ´ıÏìÓ¦³¬Ê±", ((NotifyBooleanAckCommand) responseCommand).getErrorMsg());
+                Assert.assertEquals("ç­‰å¾…å“åº”è¶…æ—¶", ((NotifyBooleanAckCommand) responseCommand).getErrorMsg());
                 Assert.assertEquals(ResponseStatus.TIMEOUT, responseCommand.getResponseStatus());
                 Assert.assertSame(DefaultConnectionUnitTest.this.connection, conn);
                 synchronized (DefaultConnectionUnitTest.this.connection) {
@@ -207,7 +207,7 @@ public class DefaultConnectionUnitTest {
             this.connection.addRequestCallBack(requestCommand.getOpaque(), requestCallBack);
         }
         catch (final NotifyRemotingException e) {
-            Assert.assertEquals("Çë²»ÒªÖØ¸´·¢ËÍÍ¬Ò»¸öÃüÁîµ½Í¬Ò»¸öÁ¬½Ó", e.getMessage());
+            Assert.assertEquals("è¯·ä¸è¦é‡å¤å‘é€åŒä¸€ä¸ªå‘½ä»¤åˆ°åŒä¸€ä¸ªè¿æ¥", e.getMessage());
         }
 
         Assert.assertSame(requestCallBack, this.connection.getRequestCallBack(requestCommand.getOpaque()));

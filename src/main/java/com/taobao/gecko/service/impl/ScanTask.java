@@ -19,7 +19,7 @@ import com.taobao.gecko.service.Connection;
 
 
 /**
- * È«¾ÖÉ¨ÃèµÄÈÎÎñ½Ó¿Ú
+ * å…¨å±€æ‰«æçš„ä»»åŠ¡æ¥å£
  * 
  * @author boyan
  * @Date 2010-5-26
@@ -29,9 +29,9 @@ public interface ScanTask {
     /**
      * 
      * @param now
-     *            É¨Ãè´¥·¢µÄÊ±¼äµã
+     *            æ‰«æè§¦å‘çš„æ—¶é—´ç‚¹
      * @param conn
-     *            µ±Ç°É¨Ãèµ½µÄÁ¬½Ó
+     *            å½“å‰æ‰«æåˆ°çš„è¿æ¥
      */
     public void visit(long now, Connection conn);
 }

@@ -19,14 +19,14 @@ import java.util.concurrent.locks.ReentrantLock;
 
 
 /**
- * ¶¨Ê±Æ÷¶ÓÁĞ£¬»ùÓÚË«ÏòÁ´±í£¬ËùÓĞµÄ±È½Ï¶¼»ùÓÚÒıÓÃ
+ * å®šæ—¶å™¨é˜Ÿåˆ—ï¼ŒåŸºäºåŒå‘é“¾è¡¨ï¼Œæ‰€æœ‰çš„æ¯”è¾ƒéƒ½åŸºäºå¼•ç”¨
  * 
  * @author boyan
  * @Date 2010-5-20
  * 
  */
 public class TimerRefQueue {
-    // ÉÚ±øÔªËØ
+    // å“¨å…µå…ƒç´ 
     private final TimerRef head = new TimerRef(null, this, null, null);
     private int size;
     private final ReentrantLock lock = new ReentrantLock();
@@ -47,7 +47,7 @@ public class TimerRefQueue {
                 return;
             }
             if (timerRef.queue != null) {
-                throw new IllegalArgumentException("¶¨Ê±Æ÷ÒÑ¾­±»¼ÓÈë¶ÓÁĞ");
+                throw new IllegalArgumentException("å®šæ—¶å™¨å·²ç»è¢«åŠ å…¥é˜Ÿåˆ—");
             }
             else {
                 timerRef.queue = this;
@@ -77,7 +77,7 @@ public class TimerRefQueue {
                 return false;
             }
             if (timerRef.queue != this) {
-                throw new IllegalArgumentException("¸Ã¶¨Ê±Æ÷²»ÔÚ±¾¶ÓÁĞÖĞ" + timerRef.queue);
+                throw new IllegalArgumentException("è¯¥å®šæ—¶å™¨ä¸åœ¨æœ¬é˜Ÿåˆ—ä¸­" + timerRef.queue);
             }
             timerRef.prev.next = timerRef.next;
             timerRef.next.prev = timerRef.prev;
@@ -94,7 +94,7 @@ public class TimerRefQueue {
     }
 
     /**
-     * ·ÃÎÊQueueÖĞÔªËØµÄvisitor
+     * è®¿é—®Queueä¸­å…ƒç´ çš„visitor
      * 
      * @author boyan
      * @Date 2010-5-20
@@ -104,7 +104,7 @@ public class TimerRefQueue {
         /**
          * 
          * @param timerRef
-         * @return ÊÇ·ñ¼ÌĞø·ÃÎÊ
+         * @return æ˜¯å¦ç»§ç»­è®¿é—®
          */
         public boolean visit(TimerRef timerRef);
     }

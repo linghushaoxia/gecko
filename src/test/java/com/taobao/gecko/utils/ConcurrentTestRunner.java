@@ -24,7 +24,7 @@ import java.util.concurrent.CyclicBarrier;
  * 
  * @author boyan
  * 
- * @since 1.0, 2010-1-11 ÏÂÎç03:12:41
+ * @since 1.0, 2010-1-11 ä¸‹åˆ03:12:41
  */
 
 public class ConcurrentTestRunner implements Runnable {

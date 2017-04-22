@@ -25,7 +25,7 @@ import com.taobao.gecko.service.exception.NotifyRemotingException;
 
 
 /**
- * Round robinµÄÁ¬½ÓÑ¡ÔñÆ÷
+ * Round robinçš„è¿žæŽ¥é€‰æ‹©å™¨
  * 
  * @author boyan
  * @Date 2010-9-10

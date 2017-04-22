@@ -18,7 +18,7 @@ package com.taobao.gecko.service.udp;
 
 
 /**
- * UDP·şÎñÆ÷
+ * UDPæœåŠ¡å™¨
  * 
  * @author boyan
  * @Date 2010-8-26

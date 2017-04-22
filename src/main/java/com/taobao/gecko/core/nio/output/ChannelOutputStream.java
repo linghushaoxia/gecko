@@ -25,13 +25,13 @@ import com.taobao.gecko.core.nio.impl.NioTCPSession;
 
 
 /**
- * Á÷Ê½APIĞ´
+ * æµå¼APIå†™
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:18:42
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:18:42
  */
 public class ChannelOutputStream extends OutputStream {
     private final ByteBuffer writeBuffer;

@@ -32,19 +32,19 @@ import com.taobao.gecko.service.RemotingClient;
 
 
 /**
- * GeckoµÄÁ¬½Ó¹ÜÀíÆ÷£¬À©Õ¹SocketChannelController£¬Ìá¹©µ¥¸öController¹ÜÀí¶à¸ö¿Í»§¶ËÁ¬½Ó¹¦ÄÜ
+ * Geckoçš„è¿æ¥ç®¡ç†å™¨ï¼Œæ‰©å±•SocketChannelControllerï¼Œæä¾›å•ä¸ªControllerç®¡ç†å¤šä¸ªå®¢æˆ·ç«¯è¿æ¥åŠŸèƒ½
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç05:56:50
+ * @since 1.0, 2009-12-16 ä¸‹åˆ05:56:50
  */
 
 public class GeckoTCPConnectorController extends SocketChannelController {
 
     /**
-     * Á¬½ÓÊ§°Ü¼àÌıÆ÷
+     * è¿æ¥å¤±è´¥ç›‘å¬å™¨
      */
     private ConnectFailListener connectFailListener;
 
@@ -105,7 +105,7 @@ public class GeckoTCPConnectorController extends SocketChannelController {
             this.cancelKey(key);
             future.failure(e);
             log.error(e, e);
-            // Í¨ÖªÁ¬½ÓÊ§°Ü
+            // é€šçŸ¥è¿æ¥å¤±è´¥
             if (this.connectFailListener != null) {
                 this.connectFailListener.onConnectFail(future.getArgs());
             }

@@ -31,7 +31,7 @@ package com.taobao.gecko.core.util;
  * limitations under the License.
  */
 /**
- * 来自于cindy2.4的工具类，做了简化和新增
+ * 鏉ヨ嚜浜巆indy2.4鐨勫伐鍏风被锛屽仛浜嗙畝鍖栧拰鏂板
  */
 import java.nio.ByteBuffer;
 
@@ -53,9 +53,9 @@ public class ByteBufferUtils {
      * 
      * @param byteBuffer
      * @param size
-     *            �ݼ��ķ���
+     *            递减的幅度
      * @param minSize
-     *            ��С��С
+     *            最小大小
      * @return
      */
     public static final ByteBuffer decreaseBufferCapatity(final ByteBuffer byteBuffer, final int size, final int minSize) {
@@ -72,11 +72,11 @@ public class ByteBufferUtils {
         }
 
         int capacity = byteBuffer.capacity() - size;
-        // ����С����С��С
+        // 不许小于最小大小
         if (capacity < minSize) {
             capacity = minSize;
         }
-        // �����ϲ���������������µĻ�������������ԭ�е����ݣ���ֱ�ӷ���ԭʼbuffer
+        // 理论上不会有这种情况，新的缓冲区不够放入原有的数据，则直接返回原始buffer
         if (capacity < byteBuffer.position()) {
             return byteBuffer;
         }
@@ -235,7 +235,7 @@ public class ByteBufferUtils {
 
 
     /**
-     * 查看ByteBuffer数组是否还有剩余
+     * 鏌ョ湅ByteBuffer鏁扮粍鏄惁杩樻湁鍓╀綑
      * 
      * @param buffers
      *            ByteBuffers

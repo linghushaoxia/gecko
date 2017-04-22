@@ -24,7 +24,7 @@ import com.taobao.gecko.service.ConnectionSelector;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-23 œ¬ŒÁ01:29:00
+ * @since 1.0, 2009-12-23 ‰∏ãÂçà01:29:00
  */
 
 public class RandomConnectionSelectorUnitTest extends BaseConnectionSelectorUnitTest {

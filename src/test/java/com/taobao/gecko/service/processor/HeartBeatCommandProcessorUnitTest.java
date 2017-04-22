@@ -40,7 +40,7 @@ import com.taobao.gecko.service.notify.response.NotifyResponseCommand;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-21 œ¬ŒÁ05:39:48
+ * @since 1.0, 2009-12-21 ‰∏ãÂçà05:39:48
  */
 
 public class HeartBeatCommandProcessorUnitTest {

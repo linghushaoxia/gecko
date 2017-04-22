@@ -29,7 +29,7 @@ import com.taobao.gecko.core.core.CodecFactory.Encoder;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-24 …œŒÁ10:49:54
+ * @since 1.0, 2009-12-24 ‰∏äÂçà10:49:54
  */
 
 public class ByteBufferCodecFactoryUnitTest {

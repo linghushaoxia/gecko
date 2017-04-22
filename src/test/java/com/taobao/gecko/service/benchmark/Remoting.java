@@ -26,7 +26,7 @@ import com.taobao.gecko.core.nio.TCPController;
 
 
 /**
- * NotifyRemoting的Echo服务器测�? *
+ * NotifyRemoting鐨凟cho鏈嶅姟鍣ㄦ祴璇? *
  * 
  * @author boyan
  * @Date 2010-8-16

@@ -37,20 +37,20 @@ import com.taobao.gecko.service.exception.NotifyRemotingException;
 
 /**
  * 
- * ÖØÁ¬¹ÜÀíÆ÷
+ * é‡è¿ç®¡ç†å™¨
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-15 ÏÂÎç03:01:38
+ * @since 1.0, 2009-12-15 ä¸‹åˆ03:01:38
  */
 
 public class ReconnectManager {
     /**
-     * ÖØÁ¬ÈÎÎñ¶ÓÁĞ
+     * é‡è¿ä»»åŠ¡é˜Ÿåˆ—
      */
     private final LinkedBlockingQueue<ReconnectTask> tasks = new LinkedBlockingQueue<ReconnectTask>();
     /**
-     * È¡ÏûÖØÁ¬ÈÎÎñµÄ·Ö×é
+     * å–æ¶ˆé‡è¿ä»»åŠ¡çš„åˆ†ç»„
      */
     private final ConcurrentHashSet<String/* group */> canceledGroupSet = new ConcurrentHashSet<String>();
     private volatile boolean started = false;
@@ -60,12 +60,12 @@ public class ReconnectManager {
     private final DefaultRemotingClient remotingClient;
     private int maxRetryTimes = -1;
     /**
-     * ÖØÁ¬ÈÎÎñµÄÖ´ĞĞÏß³Ì
+     * é‡è¿ä»»åŠ¡çš„æ‰§è¡Œçº¿ç¨‹
      */
     private final Thread[] healConnectionThreads;
 
     private final class HealConnectionRunner implements Runnable {
-        private long lastConnectTime = -1; // ÉÏ´ÎÁ¬½ÓËù»¨·ÑµÄÊ±¼ä
+        private long lastConnectTime = -1; // ä¸Šæ¬¡è¿æ¥æ‰€èŠ±è´¹çš„æ—¶é—´
 
 
         @Override
@@ -74,16 +74,16 @@ public class ReconnectManager {
                 long start = -1;
                 ReconnectTask task = null;
                 try {
-                    // Ö»ÓĞµ±ÖØÁ¬Ëù»¨·ÑµÄÊ±¼äĞ¡ÓÚÖØÁ¬ÈÎÎñ¼ä¸ôµÄÊ±ºò²ÅsleepÒÔÏÂ£¬¼õÉÙÈÕÖ¾´òÓ¡
+                    // åªæœ‰å½“é‡è¿æ‰€èŠ±è´¹çš„æ—¶é—´å°äºé‡è¿ä»»åŠ¡é—´éš”çš„æ—¶å€™æ‰sleepä»¥ä¸‹ï¼Œå‡å°‘æ—¥å¿—æ‰“å°
                     if (this.lastConnectTime > 0
                             && this.lastConnectTime < ReconnectManager.this.clientConfig.getHealConnectionInterval()
                             || this.lastConnectTime < 0) {
                         Thread.sleep(ReconnectManager.this.clientConfig.getHealConnectionInterval());
                     }
                     task = ReconnectManager.this.tasks.take();
-                    // ¿½±´±£»¤£¬×öÈÕÖ¾¼ÇÂ¼
+                    // æ‹·è´ä¿æŠ¤ï¼Œåšæ—¥å¿—è®°å½•
                     final Set<String> copySet = new HashSet<String>(task.getGroupSet());
-                    // ÒÆ³ıÄ¬ÈÏ·Ö×é
+                    // ç§»é™¤é»˜è®¤åˆ†ç»„
                     copySet.remove(Constants.DEFAULT_GROUP);
                     start = System.currentTimeMillis();
                     if (ReconnectManager.this.isValidTask(task)) {
@@ -95,14 +95,14 @@ public class ReconnectManager {
                     this.lastConnectTime = System.currentTimeMillis() - start;
                 }
                 catch (final InterruptedException e) {
-                    // ignore£¬ÖØĞÂ¼ì²âstarted×´Ì¬
+                    // ignoreï¼Œé‡æ–°æ£€æµ‹startedçŠ¶æ€
                 }
                 catch (final Exception e) {
                     if (start != -1) {
                         this.lastConnectTime = System.currentTimeMillis() - start;
                     }
                     if (task != null) {
-                        log.error("Reconnect to " + RemotingUtils.getAddrString(task.getRemoteAddress()) + "Ê§°Ü",
+                        log.error("Reconnect to " + RemotingUtils.getAddrString(task.getRemoteAddress()) + "å¤±è´¥",
                             e.getCause());
                         this.readdTask(task);
                     }
@@ -137,7 +137,7 @@ public class ReconnectManager {
                             task.getGroupSet(), ReconnectManager.this.remotingClient);
                 timerRef.setRunnable(runnable);
                 ReconnectManager.this.remotingClient.insertTimer(timerRef);
-                // ±ê¼ÇÕâ¸öÈÎÎñÍê³É
+                // æ ‡è®°è¿™ä¸ªä»»åŠ¡å®Œæˆ
                 task.setDone(true);
             }
             catch (final Exception e) {
@@ -189,7 +189,7 @@ public class ReconnectManager {
 
 
     /**
-     * ÅĞ¶ÏÊÇ·ñÓĞĞ§·Ö×é
+     * åˆ¤æ–­æ˜¯å¦æœ‰æ•ˆåˆ†ç»„
      * 
      * @param task
      * @return
@@ -200,7 +200,7 @@ public class ReconnectManager {
 
 
     /**
-     * ·Ö×éÎª¿Õ
+     * åˆ†ç»„ä¸ºç©º
      * 
      * @param task
      * @return
@@ -211,7 +211,7 @@ public class ReconnectManager {
 
 
     /**
-     * ½öÓĞÄ¬ÈÏ·Ö×é
+     * ä»…æœ‰é»˜è®¤åˆ†ç»„
      * 
      * @param task
      * @return

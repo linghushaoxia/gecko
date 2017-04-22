@@ -46,13 +46,13 @@ import com.taobao.gecko.core.util.SystemUtils;
 
 
 /**
- * Nio的UDP实现
+ * Nio鐨刄DP瀹炵幇
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 下午06:08:54
+ * @since 1.0, 2009-12-16 涓嬪崍06:08:54
  */
 public abstract class DatagramChannelController extends NioController {
 

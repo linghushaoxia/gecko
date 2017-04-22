@@ -16,7 +16,7 @@
 package com.taobao.gecko.service.notify;
 
 /**
- * Notify命令接口，定义content的编解码方法
+ * Notify鍛戒护鎺ュ彛锛屽畾涔塩ontent鐨勭紪瑙ｇ爜鏂规硶
  * 
  * @author boyan
  * @Date 2010-8-9

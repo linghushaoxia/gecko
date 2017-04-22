@@ -30,11 +30,11 @@ import com.taobao.gecko.service.exception.NotifyRemotingException;
 /**
  * 
  * 
- * 针对单个连接或者单个分组的请求回调
+ * 閽堝鍗曚釜杩炴帴鎴栬�呭崟涓垎缁勭殑璇锋眰鍥炶皟
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-15 下午04:04:2
+ * @since 1.0, 2009-12-15 涓嬪崍04:04:2
  */
 
 public final class SingleRequestCallBack extends AbstractRequestCallBack {
@@ -93,7 +93,7 @@ public final class SingleRequestCallBack extends AbstractRequestCallBack {
             throw new TimeoutException("Operation timeout(1 second)");
         }
         if (this.exception != null) {
-            throw new NotifyRemotingException("同步调用失败", this.exception);
+            throw new NotifyRemotingException("鍚屾璋冪敤澶辫触", this.exception);
         }
         synchronized (this) {
             return this.responseCommand;
@@ -121,7 +121,7 @@ public final class SingleRequestCallBack extends AbstractRequestCallBack {
                 this.responseCommand = responseCommand;
             }
             else {
-                return;// 已经有应答了
+                return;// 宸茬粡鏈夊簲绛斾簡
             }
         }
 
@@ -147,15 +147,15 @@ public final class SingleRequestCallBack extends AbstractRequestCallBack {
             throws InterruptedException, TimeoutException, NotifyRemotingException {
         if (!this.await(time, timeUnit)) {
             this.cancelWrite(conn);
-            // 切记移除回调
+            // 鍒囪绉婚櫎鍥炶皟
             this.removeCallBackFromConnection(conn, this.requestCommandHeader.getOpaque());
             throw new TimeoutException("Operation timeout");
         }
         if (this.exception != null) {
             this.cancelWrite(conn);
-            // 切记移除回调
+            // 鍒囪绉婚櫎鍥炶皟
             this.removeCallBackFromConnection(conn, this.requestCommandHeader.getOpaque());
-            throw new NotifyRemotingException("同步调用失败", this.exception);
+            throw new NotifyRemotingException("鍚屾璋冪敤澶辫触", this.exception);
         }
         synchronized (this) {
             return this.responseCommand;

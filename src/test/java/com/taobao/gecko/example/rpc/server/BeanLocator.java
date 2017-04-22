@@ -16,7 +16,7 @@
 package com.taobao.gecko.example.rpc.server;
 
 /**
- * Bean²éÕÒÆ÷
+ * BeanæŸ¥æ‰¾å™¨
  * 
  * @author boyan
  * @Date 2011-2-17

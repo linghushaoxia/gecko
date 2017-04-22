@@ -29,7 +29,7 @@ import com.taobao.gecko.core.core.Session;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 œ¬ŒÁ05:52:58
+ * @since 1.0, 2009-12-16 ‰∏ãÂçà05:52:58
  */
 
 public class NotifyWrapEncoder implements CodecFactory.Encoder {

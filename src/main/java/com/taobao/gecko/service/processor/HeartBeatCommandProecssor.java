@@ -31,11 +31,11 @@ import com.taobao.gecko.service.exception.NotifyRemotingException;
 /**
  * 
  * 
- * 心跳命令的处理器
+ * 蹇冭烦鍛戒护鐨勫鐞嗗櫒
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-18 下午03:50:17
+ * @since 1.0, 2009-12-18 涓嬪崍03:50:17
  */
 
 public class HeartBeatCommandProecssor implements RequestProcessor<HeartBeatRequestCommand> {
@@ -53,7 +53,7 @@ public class HeartBeatCommandProecssor implements RequestProcessor<HeartBeatRequ
                 .createBooleanAckCommand(request.getRequestHeader(), ResponseStatus.NO_ERROR, null));
         }
         catch (final NotifyRemotingException e) {
-            logger.error("发送心跳应答给连接[" + RemotingUtils.getAddrString(conn.getRemoteSocketAddress()) + "]失败", e);
+            logger.error("鍙戦�佸績璺冲簲绛旂粰杩炴帴[" + RemotingUtils.getAddrString(conn.getRemoteSocketAddress()) + "]澶辫触", e);
         }
     }
 

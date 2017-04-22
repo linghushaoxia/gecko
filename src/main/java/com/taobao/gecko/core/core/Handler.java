@@ -16,13 +16,13 @@
 package com.taobao.gecko.core.core;
 
 /**
- * ÒµÎñ´¦ÀíÆ÷
+ * ä¸šåŠ¡å¤„ç†å™¨
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:00:24
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:00:24
  */
 public interface Handler {
 

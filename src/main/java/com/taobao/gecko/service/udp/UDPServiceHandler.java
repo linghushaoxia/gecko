@@ -19,7 +19,7 @@ import java.net.DatagramPacket;
 
 
 /**
- * UDPÏûÏ¢´¦ÀíÆ÷
+ * UDPæ¶ˆæ¯å¤„ç†å™¨
  * 
  * @author boyan
  * @Date 2010-8-26

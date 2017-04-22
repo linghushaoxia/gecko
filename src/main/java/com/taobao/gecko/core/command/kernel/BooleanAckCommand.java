@@ -19,7 +19,7 @@ import com.taobao.gecko.core.command.ResponseCommand;
 
 
 /**
- * 系统级的响应消息，返回应答成功或者失败，仅是标记接口
+ * 绯荤粺绾х殑鍝嶅簲娑堟伅锛岃繑鍥炲簲绛旀垚鍔熸垨鑰呭け璐ワ紝浠呮槸鏍囪鎺ュ彛
  * 
  * @author boyan
  * 
@@ -27,7 +27,7 @@ import com.taobao.gecko.core.command.ResponseCommand;
 public interface BooleanAckCommand extends ResponseCommand {
 
     /**
-     * 获取附加错误信息
+     * 鑾峰彇闄勫姞閿欒淇℃伅
      * 
      * @return
      */
@@ -35,7 +35,7 @@ public interface BooleanAckCommand extends ResponseCommand {
 
 
     /**
-     * 设置附加错误信息
+     * 璁剧疆闄勫姞閿欒淇℃伅
      * 
      * @param errorMsg
      */

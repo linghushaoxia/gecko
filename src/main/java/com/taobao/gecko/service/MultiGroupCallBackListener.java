@@ -23,11 +23,11 @@ import com.taobao.gecko.core.command.ResponseCommand;
 
 /**
  * 
- * ¶à·Ö×éÇëÇóµÄÓ¦´ğ¼àÌıÆ÷
+ * å¤šåˆ†ç»„è¯·æ±‚çš„åº”ç­”ç›‘å¬å™¨
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-15 ÏÂÎç04:41:37
+ * @since 1.0, 2009-12-15 ä¸‹åˆ04:41:37
  */
 
 public interface MultiGroupCallBackListener {

@@ -68,7 +68,7 @@ import com.taobao.gecko.service.notify.response.NotifyResponseCommand;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-22 ÉÏÎç10:16:37
+ * @since 1.0, 2009-12-22 ä¸Šåˆ10:16:37
  */
 
 public class DefaultRemotingServerUnitTest {
@@ -113,7 +113,7 @@ public class DefaultRemotingServerUnitTest {
 
         @Override
         public void onConnectionCreated(final Connection conn) {
-            System.out.println("Á¬½Ó½¨Á¢£¬²¢¼ÓÈëtest·Ö×é");
+            System.out.println("è¿æ¥å»ºç«‹ï¼Œå¹¶åŠ å…¥teståˆ†ç»„");
             conn.getRemotingContext().addConnectionToGroup(GROUP, conn);
 
         }
@@ -304,7 +304,7 @@ public class DefaultRemotingServerUnitTest {
         this.remotingServer.addConnectionLifeCycleListener(new JoinGroupListener());
         final RemotingClient remotingClient = RemotingFactory.connect(this.newNotifyClientConfig());
         final DummyRequestProcessor processor = new DummyRequestProcessor();
-        // ÑÓ³ÙÓ¦´ğ
+        // å»¶è¿Ÿåº”ç­”
         processor.sleepTime = 2000;
         remotingClient.registerProcessor(NotifyDummyRequestCommand.class, processor);
 
@@ -334,7 +334,7 @@ public class DefaultRemotingServerUnitTest {
                 @Override
                 public void onResponse(final ResponseCommand responseCommand, final Connection conn) {
                     Assert.assertNotNull(responseCommand);
-                    // È·¶¨ÊÇ³¬Ê±
+                    // ç¡®å®šæ˜¯è¶…æ—¶
                     Assert.assertEquals(ResponseStatus.TIMEOUT, responseCommand.getResponseStatus());
                     invoked.set(true);
                     synchronized (DefaultRemotingServerUnitTest.this.remotingServer) {
@@ -413,7 +413,7 @@ public class DefaultRemotingServerUnitTest {
         this.remotingServer.addConnectionLifeCycleListener(new JoinGroupListener());
         final RemotingClient remotingClient = RemotingFactory.connect(this.newNotifyClientConfig());
         final DummyRequestProcessor processor = new DummyRequestProcessor();
-        // ÑÓ³ÙÏìÓ¦
+        // å»¶è¿Ÿå“åº”
         processor.sleepTime = 2000;
         remotingClient.registerProcessor(NotifyDummyRequestCommand.class, processor);
 
@@ -457,7 +457,7 @@ public class DefaultRemotingServerUnitTest {
                 Thread.sleep(500);
             }
 
-            // ²âÊÔµ¥Ïò·¢¸ø·Ö×éµÄËùÓĞÁ¬½Ó
+            // æµ‹è¯•å•å‘å‘ç»™åˆ†ç»„çš„æ‰€æœ‰è¿æ¥
             this.remotingServer.sendToGroupAllConnections(GROUP, new NotifyDummyRequestCommand((String) null));
 
             while (processor.recvCount.get() != 5) {
@@ -467,7 +467,7 @@ public class DefaultRemotingServerUnitTest {
 
             final AtomicBoolean invoked = new AtomicBoolean(false);
 
-            // ²âÊÔÉèÖÃ¼àÌıÆ÷
+            // æµ‹è¯•è®¾ç½®ç›‘å¬å™¨
             this.remotingServer.sendToGroupAllConnections(GROUP, new NotifyDummyRequestCommand((String) null),
                 new GroupAllConnectionCallBackListener() {
 
@@ -511,7 +511,7 @@ public class DefaultRemotingServerUnitTest {
         this.remotingServer.addConnectionLifeCycleListener(new JoinGroupListener());
         final RemotingClient remotingClient = RemotingFactory.connect(this.newNotifyClientConfig());
         final DummyRequestProcessor processor = new DummyRequestProcessor();
-        // ÑÓÊ±ÏìÓ¦
+        // å»¶æ—¶å“åº”
         processor.sleepTime = 5000;
         remotingClient.registerProcessor(NotifyDummyRequestCommand.class, processor);
 
@@ -538,7 +538,7 @@ public class DefaultRemotingServerUnitTest {
                     Assert.assertEquals(5, resultMap.size());
                     for (final Map.Entry<Connection, ResponseCommand> entry : resultMap.entrySet()) {
                         Assert.assertEquals(ResponseStatus.TIMEOUT, entry.getValue().getResponseStatus());
-                        Assert.assertEquals("µÈ´ıÏìÓ¦³¬Ê±", ((NotifyBooleanAckCommand) entry.getValue()).getErrorMsg());
+                        Assert.assertEquals("ç­‰å¾…å“åº”è¶…æ—¶", ((NotifyBooleanAckCommand) entry.getValue()).getErrorMsg());
                     }
                     synchronized (DefaultRemotingServerUnitTest.this.remotingServer) {
                         invoked.set(true);
@@ -599,7 +599,7 @@ public class DefaultRemotingServerUnitTest {
 
     @Test(timeout = 10000)
     public void testSendToGroups() throws Exception {
-        // ¼ÓÈë²»Í¬·Ö×é
+        // åŠ å…¥ä¸åŒåˆ†ç»„
         this.remotingServer.addConnectionLifeCycleListener(new JoinDiffGroupListener());
         final RemotingClient remotingClient = RemotingFactory.connect(this.newNotifyClientConfig());
         final DummyRequestProcessor processor = new DummyRequestProcessor();
@@ -614,12 +614,12 @@ public class DefaultRemotingServerUnitTest {
             while (this.remotingServer.getConnectionCount(GROUP2) < 5) {
                 Thread.sleep(500);
             }
-            // ²âÊÔµ¥Ïò·¢ËÍ
+            // æµ‹è¯•å•å‘å‘é€
             this.remotingServer.sendToGroups(this.createGroupObjects());
             Thread.sleep(2000);
             Assert.assertEquals(2, processor.recvCount.get());
 
-            // ²âÊÔ»Øµ÷¼àÌıÆ÷
+            // æµ‹è¯•å›è°ƒç›‘å¬å™¨
             final AtomicBoolean invoked = new AtomicBoolean(false);
             this.remotingServer.sendToGroups(this.createGroupObjects(), new MultiGroupCallBackListener() {
 
@@ -662,7 +662,7 @@ public class DefaultRemotingServerUnitTest {
 
     @Test(timeout = 20000)
     public void testSendToGroupsTimeout() throws Exception {
-        // ¼ÓÈë²»Í¬·Ö×é
+        // åŠ å…¥ä¸åŒåˆ†ç»„
         this.remotingServer.addConnectionLifeCycleListener(new JoinDiffGroupListener());
         final RemotingClient remotingClient = RemotingFactory.connect(this.newNotifyClientConfig());
         final DummyRequestProcessor processor = new DummyRequestProcessor();
@@ -678,7 +678,7 @@ public class DefaultRemotingServerUnitTest {
             while (this.remotingServer.getConnectionCount(GROUP2) < 5) {
                 Thread.sleep(500);
             }
-            // ²âÊÔ»Øµ÷¼àÌıÆ÷
+            // æµ‹è¯•å›è°ƒç›‘å¬å™¨
             final AtomicBoolean invoked = new AtomicBoolean(false);
             this.remotingServer.sendToGroups(this.createGroupObjects(), new MultiGroupCallBackListener() {
 
@@ -722,13 +722,13 @@ public class DefaultRemotingServerUnitTest {
 
     @Test(timeout = 60000)
     public void testSendToGroupsThreadPoolBusy() throws Exception {
-        // ¼ÓÈë²»Í¬·Ö×é
+        // åŠ å…¥ä¸åŒåˆ†ç»„
         this.remotingServer.addConnectionLifeCycleListener(new JoinDiffGroupListener());
         final ClientConfig clientConfig = this.newNotifyClientConfig();
         clientConfig.setIdleTime(Integer.MAX_VALUE);
 
         final RemotingClient remotingClient = RemotingFactory.connect(clientConfig);
-        // ÏŞÖÆÁ¬½Ó³Ø´óĞ¡
+        // é™åˆ¶è¿æ¥æ± å¤§å°
         final DummyRequestProcessor processor = new DummyRequestProcessor();
         processor.threadPoolExecutor.shutdown();
         processor.threadPoolExecutor =
@@ -745,13 +745,13 @@ public class DefaultRemotingServerUnitTest {
             while (this.remotingServer.getConnectionCount(GROUP2) < 5) {
                 Thread.sleep(500);
             }
-            // Ô¤ÏÈ·¢ËÍ¼¸´Î£¬ÈÃÏß³Ì³Ø·±Ã¦
+            // é¢„å…ˆå‘é€å‡ æ¬¡ï¼Œè®©çº¿ç¨‹æ± ç¹å¿™
             this.remotingServer.sendToGroups(this.createGroupObjects());
             this.remotingServer.sendToGroups(this.createGroupObjects());
 
             Thread.sleep(5000);
 
-            // ²âÊÔ»Øµ÷¼àÌıÆ÷
+            // æµ‹è¯•å›è°ƒç›‘å¬å™¨
             final AtomicBoolean invoked = new AtomicBoolean(false);
             this.remotingServer.sendToGroups(this.createGroupObjects(), new MultiGroupCallBackListener() {
 
@@ -803,11 +803,11 @@ public class DefaultRemotingServerUnitTest {
         catch (final IllegalStateException e) {
 
         }
-        // ÖØĞÂÆô¶¯
+        // é‡æ–°å¯åŠ¨
         this.remotingServer.start();
         Assert.assertTrue(this.remotingServer.isStarted());
 
-        // ³¢ÊÔ·¢ËÍÏûÏ¢
+        // å°è¯•å‘é€æ¶ˆæ¯
         this.remotingServer.addConnectionLifeCycleListener(new JoinGroupListener());
         final RemotingClient remotingClient = RemotingFactory.connect(this.newNotifyClientConfig());
         final DummyRequestProcessor processor = new DummyRequestProcessor();
@@ -837,7 +837,7 @@ public class DefaultRemotingServerUnitTest {
     public void testNoProcessor() throws Exception {
         this.remotingServer.addConnectionLifeCycleListener(new JoinGroupListener());
         final RemotingClient remotingClient = RemotingFactory.connect(this.newNotifyClientConfig());
-        // ¿Í»§¶ËÃ»ÓĞ×¢²áÇëÇó´¦ÀíÆ÷
+        // å®¢æˆ·ç«¯æ²¡æœ‰æ³¨å†Œè¯·æ±‚å¤„ç†å™¨
         // remotingClient.registerProcessor(DummyRequestCommand.class,
         // processor);
 
@@ -913,13 +913,13 @@ public class DefaultRemotingServerUnitTest {
                 (DefaultConnection) this.remotingServer.getRemotingContext()
                 .getConnectionsByGroup(Constants.DEFAULT_GROUP).iterator().next();
         Assert.assertNotNull(conn);
-        // callback³¬Ê±1Ãë
+        // callbackè¶…æ—¶1ç§’
         conn.addRequestCallBack(0, new SingleRequestCallBack(null, 1000));
         Assert.assertNotNull(conn.getRequestCallBack(0));
-        // µÈ´ıÁ½¸öÉ¨ÃèÖÜÆÚ
+        // ç­‰å¾…ä¸¤ä¸ªæ‰«æå‘¨æœŸ
         Thread.sleep(4000);
         Assert.assertNull(conn.getRequestCallBack(0));
-        // È·ÈÏcallBackÒÑ¾­±»ÒÆ³ı
+        // ç¡®è®¤callBackå·²ç»è¢«ç§»é™¤
         connector.stop();
 
     }

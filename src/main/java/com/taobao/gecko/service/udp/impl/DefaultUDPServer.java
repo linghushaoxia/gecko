@@ -33,7 +33,7 @@ import com.taobao.gecko.service.udp.UDPServiceHandler;
 
 
 /**
- * UDP·şÎñ¶ËÊµÏÖ
+ * UDPæœåŠ¡ç«¯å®ç°
  * 
  * @author boyan
  * @Date 2010-8-26
@@ -61,7 +61,7 @@ public class DefaultUDPServer implements UDPServer {
             }
 
         });
-        // ¸´ÓÃSelectorManager
+        // å¤ç”¨SelectorManager
         if (remotingController != null && remotingController.isStarted()) {
             final NioController nioController = ((BaseRemotingController) remotingController).getController();
             this.udpController.setSelectorManager(nioController.getSelectorManager());
@@ -70,7 +70,7 @@ public class DefaultUDPServer implements UDPServer {
             this.udpController.bind(new InetSocketAddress(port));
         }
         catch (final IOException e) {
-            throw new NotifyRemotingException("Æô¶¯udp·şÎñÆ÷Ê§°Ü£¬¶Ë¿ÚÎª" + port, e);
+            throw new NotifyRemotingException("å¯åŠ¨udpæœåŠ¡å™¨å¤±è´¥ï¼Œç«¯å£ä¸º" + port, e);
         }
 
     }

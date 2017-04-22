@@ -16,13 +16,13 @@
 package com.taobao.gecko.core.core;
 
 /**
- * SocketÑ¡Ïî
+ * Socketé€‰é¡¹
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:02:03
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:02:03
  */
 public class SocketOption<T> {
 

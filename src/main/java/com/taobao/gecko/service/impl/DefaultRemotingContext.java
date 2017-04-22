@@ -39,11 +39,11 @@ import com.taobao.gecko.service.config.BaseConfig;
 
 /**
  * 
- * Í¨Ñ¶²ãµÄÈ«¾ÖÉÏÏÂÎÄ
+ * é€šè®¯å±‚çš„å…¨å±€ä¸Šä¸‹æ–‡
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-15 ÏÂÎç02:46:34
+ * @since 1.0, 2009-12-15 ä¸‹åˆ02:46:34
  */
 
 public class DefaultRemotingContext implements RemotingContext, DefaultRemotingContextMBean {
@@ -54,7 +54,7 @@ public class DefaultRemotingContext implements RemotingContext, DefaultRemotingC
     private final Semaphore callBackSemaphore;
     static final Log log = LogFactory.getLog(DefaultRemotingContext.class);
     /**
-     * Sessionµ½connectionµÄÓ³Éä¹ØÏµ
+     * Sessionåˆ°connectionçš„æ˜ å°„å…³ç³»
      */
     protected final ConcurrentHashMap<NioSession, DefaultConnection> session2ConnectionMap =
             new ConcurrentHashMap<NioSession, DefaultConnection>();
@@ -69,7 +69,7 @@ public class DefaultRemotingContext implements RemotingContext, DefaultRemotingC
         this.groupManager = new GroupManager();
         this.config = config;
         if (commandFactory == null) {
-            throw new IllegalArgumentException("CommandFactory²»ÄÜÎª¿Õ");
+            throw new IllegalArgumentException("CommandFactoryä¸èƒ½ä¸ºç©º");
         }
         this.commandFactory = commandFactory;
         this.callBackSemaphore = new Semaphore(this.config.getMaxCallBackCount());
@@ -96,7 +96,7 @@ public class DefaultRemotingContext implements RemotingContext, DefaultRemotingC
 
 
     /**
-     * ÇëÇóÔÊĞí¼ÓÈëcallBack£¬×öcallBack×ÜÊıÏŞÖÆ
+     * è¯·æ±‚å…è®¸åŠ å…¥callBackï¼ŒåšcallBackæ€»æ•°é™åˆ¶
      * 
      * @return
      */
@@ -106,7 +106,7 @@ public class DefaultRemotingContext implements RemotingContext, DefaultRemotingC
 
 
     /**
-     * ÔÚÓ¦´ğµ½´ïÊ±ÊÍ·ÅĞí¿É
+     * åœ¨åº”ç­”åˆ°è¾¾æ—¶é‡Šæ”¾è®¸å¯
      */
     void release() {
         this.callBackSemaphore.release();
@@ -124,7 +124,7 @@ public class DefaultRemotingContext implements RemotingContext, DefaultRemotingC
                 listener.onConnectionCreated(conn);
             }
             catch (final Throwable t) {
-                log.error("NotifyRemoting-µ÷ÓÃConnectionLifeCycleListener.onConnectionCreated³ö´í", t);
+                log.error("NotifyRemoting-è°ƒç”¨ConnectionLifeCycleListener.onConnectionCreatedå‡ºé”™", t);
             }
         }
     }
@@ -136,7 +136,7 @@ public class DefaultRemotingContext implements RemotingContext, DefaultRemotingC
                 listener.onConnectionClosed(conn);
             }
             catch (final Throwable t) {
-                log.error("NotifyRemoting-µ÷ÓÃConnectionLifeCycleListener.onConnectionClosed³ö´í", t);
+                log.error("NotifyRemoting-è°ƒç”¨ConnectionLifeCycleListener.onConnectionClosedå‡ºé”™", t);
             }
         }
     }

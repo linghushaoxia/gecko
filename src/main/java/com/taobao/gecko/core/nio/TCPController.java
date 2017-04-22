@@ -139,7 +139,7 @@ public class TCPController extends SocketChannelController implements ServerCont
 
     @Override
     public void onAccept(final SelectionKey selectionKey) throws IOException {
-        // ServerÒÑ¾­¹Ø±Õ£¬Ö±½Ó·µ»Ø
+        // Serverå·²ç»å…³é—­ï¼Œç›´æ¥è¿”å›
         if (!this.serverSocketChannel.isOpen()) {
             selectionKey.cancel();
             return;

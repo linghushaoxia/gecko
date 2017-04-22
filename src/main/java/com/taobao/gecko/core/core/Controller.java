@@ -22,13 +22,13 @@ import com.taobao.gecko.core.statistics.Statistics;
 
 
 /**
- * ÍøÂç²ãÖ÷¿Ø½Ó¿Ú
+ * ç½‘ç»œå±‚ä¸»æ§æ¥å£
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç05:57:49
+ * @since 1.0, 2009-12-16 ä¸‹åˆ05:57:49
  */
 public interface Controller {
 

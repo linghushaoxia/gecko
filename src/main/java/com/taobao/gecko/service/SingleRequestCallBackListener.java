@@ -23,28 +23,28 @@ import com.taobao.gecko.core.command.ResponseCommand;
 /**
  * 
  * 
- * µ¥¸ö·Ö×éµÄµ¥¸öÁ¬½ÓµÄÓ¦´ğ»Øµ÷¼àÌıÆ÷
+ * å•ä¸ªåˆ†ç»„çš„å•ä¸ªè¿æ¥çš„åº”ç­”å›è°ƒç›‘å¬å™¨
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-15 ÏÂÎç04:13:17
+ * @since 1.0, 2009-12-15 ä¸‹åˆ04:13:17
  */
 
 public interface SingleRequestCallBackListener {
 
     /**
-     * ´¦ÀíÓ¦´ğ
+     * å¤„ç†åº”ç­”
      * 
      * @param responseCommand
-     *            Ó¦´ğÃüÁî
+     *            åº”ç­”å‘½ä»¤
      * @param conn
-     *            Ó¦´ğÁ¬½Ó
+     *            åº”ç­”è¿æ¥
      */
     public void onResponse(ResponseCommand responseCommand, Connection conn);
 
 
     /**
-     * Òì³£·¢ÉúµÄÊ±ºò»Øµ÷
+     * å¼‚å¸¸å‘ç”Ÿçš„æ—¶å€™å›è°ƒ
      * 
      * @param e
      */
@@ -52,7 +52,7 @@ public interface SingleRequestCallBackListener {
 
 
     /**
-     * onResponse»Øµ÷Ö´ĞĞµÄÏß³Ì³Ø
+     * onResponseå›è°ƒæ‰§è¡Œçš„çº¿ç¨‹æ± 
      * 
      * @return
      */

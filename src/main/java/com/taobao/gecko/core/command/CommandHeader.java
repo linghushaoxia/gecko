@@ -16,14 +16,14 @@
 package com.taobao.gecko.core.command;
 
 /**
- * 存放在callBack中的请求信息，出于节省内存考虑，最好不要存放协议体
+ * 瀛樻斁鍦╟allBack涓殑璇锋眰淇℃伅锛屽嚭浜庤妭鐪佸唴瀛樿�冭檻锛屾渶濂戒笉瑕佸瓨鏀惧崗璁綋
  * 
  * @author dennis
  * 
  */
 public interface CommandHeader extends Command {
     /**
-     * 返回请求的opaque
+     * 杩斿洖璇锋眰鐨刼paque
      * 
      * @return
      */

@@ -44,7 +44,7 @@ package com.taobao.gecko.core.util;
  * all caught exceptions in <tt>WARN</tt> level using SLF4J.
  * 
  * @author The Apache Directory Project (mina-dev@directory.apache.org)
- * @version $Rev: 555855 $, $Date: 2007-07-13 12:19:00 +0900 (旮� 13 7鞗�2007) $
+ * @version $Rev: 555855 $, $Date: 2007-07-13 12:19:00 +0900 (鏃拷 13 7闉楋拷2007) $
  * 
  * @see DefaultExceptionMonitor
  */

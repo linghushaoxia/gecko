@@ -23,17 +23,17 @@ import com.taobao.gecko.service.config.ServerConfig;
 
 /**
  * 
- * Remoting·şÎñÆ÷
+ * RemotingæœåŠ¡å™¨
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-15 ÉÏÎç11:11:29
+ * @since 1.0, 2009-12-15 ä¸Šåˆ11:11:29
  */
 
 public interface RemotingServer extends RemotingController {
 
     /**
-     * ÉèÖÃ·şÎñÆ÷ÅäÖÃ£¬°üÀ¨¶Ë¿Ú¡¢TCPÑ¡ÏîµÈ
+     * è®¾ç½®æœåŠ¡å™¨é…ç½®ï¼ŒåŒ…æ‹¬ç«¯å£ã€TCPé€‰é¡¹ç­‰
      * 
      * @param serverConfig
      */
@@ -41,7 +41,7 @@ public interface RemotingServer extends RemotingController {
 
 
     /**
-     * ·µ»Ø¿É¹©Á¬½ÓµÄURI
+     * è¿”å›å¯ä¾›è¿æ¥çš„URI
      * 
      * @return
      */
@@ -49,7 +49,7 @@ public interface RemotingServer extends RemotingController {
 
 
     /**
-     * ·µ»Ø°ó¶¨µØÖ·
+     * è¿”å›ç»‘å®šåœ°å€
      * 
      * @return
      */

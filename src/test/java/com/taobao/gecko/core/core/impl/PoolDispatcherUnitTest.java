@@ -30,7 +30,7 @@ import org.junit.Test;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-24 ÉÏÎç11:34:43
+ * @since 1.0, 2009-12-24 ä¸Šåˆ11:34:43
  */
 
 public class PoolDispatcherUnitTest {

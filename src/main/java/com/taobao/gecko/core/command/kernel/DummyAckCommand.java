@@ -19,7 +19,7 @@ import com.taobao.gecko.core.command.ResponseCommand;
 
 
 /**
- * 测试请求响应命令接口
+ * 娴嬭瘯璇锋眰鍝嶅簲鍛戒护鎺ュ彛
  * 
  * @author boyan
  * 

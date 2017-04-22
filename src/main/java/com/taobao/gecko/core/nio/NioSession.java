@@ -38,14 +38,14 @@ import com.taobao.gecko.core.nio.impl.TimerRef;
 
 
 /**
- * NioµÄÁ¬½Ó½Ó¿Ú
+ * Nioçš„è¿æ¥æ¥å£
  * 
  * @author boyan
  * 
  */
 public interface NioSession extends Session {
     /*
-     * ÅÉ·¢ÊÂ¼ş
+     * æ´¾å‘äº‹ä»¶
      * 
      * @param event
      * 
@@ -55,7 +55,7 @@ public interface NioSession extends Session {
 
 
     /**
-     * ×¢²á¶Á
+     * æ³¨å†Œè¯»
      * 
      * @param selector
      */
@@ -63,7 +63,7 @@ public interface NioSession extends Session {
 
 
     /**
-     * ×¢²áĞ´
+     * æ³¨å†Œå†™
      * 
      * @param selector
      */
@@ -71,7 +71,7 @@ public interface NioSession extends Session {
 
 
     /**
-     * Ìí¼ÓÒ»¸ö¶¨Ê±Æ÷
+     * æ·»åŠ ä¸€ä¸ªå®šæ—¶å™¨
      * 
      * @param timeout
      * @param runnable
@@ -81,7 +81,7 @@ public interface NioSession extends Session {
 
 
     /**
-     * Íù¸ÃÁ¬½ÓĞ´ÈëÏûÏ¢£¬¿É±»ÖĞ¶Ï£¬ÖĞ¶Ï¿ÉÄÜÒıÆğÁ¬½ÓµÄ¹Ø±Õ£¬É÷ÖØÊ¹ÓÃ
+     * å¾€è¯¥è¿æ¥å†™å…¥æ¶ˆæ¯ï¼Œå¯è¢«ä¸­æ–­ï¼Œä¸­æ–­å¯èƒ½å¼•èµ·è¿æ¥çš„å…³é—­ï¼Œæ…é‡ä½¿ç”¨
      * 
      * @param message
      */
@@ -89,7 +89,7 @@ public interface NioSession extends Session {
 
 
     /**
-     * Íù¸ÃÁ¬½ÓĞ´ÈëÏûÏ¢£¬¿É±»ÖĞ¶Ï£¬ÖĞ¶Ï¿ÉÄÜÒıÆğÁ¬½ÓµÄ¹Ø±Õ£¬É÷ÖØÊ¹ÓÃ
+     * å¾€è¯¥è¿æ¥å†™å…¥æ¶ˆæ¯ï¼Œå¯è¢«ä¸­æ–­ï¼Œä¸­æ–­å¯èƒ½å¼•èµ·è¿æ¥çš„å…³é—­ï¼Œæ…é‡ä½¿ç”¨
      * 
      * @param message
      */
@@ -97,7 +97,7 @@ public interface NioSession extends Session {
 
 
     /**
-     * »ñµÃÁ¬½Ó¶ÔÓ¦µÄchannel
+     * è·å¾—è¿æ¥å¯¹åº”çš„channel
      * 
      * @return
      */
@@ -105,8 +105,8 @@ public interface NioSession extends Session {
 
 
     /**
-     * ´ÓÖ¸¶¨FileChannelµÄpositionÎ»ÖÃ¿ªÊ¼´«Êäsize¸ö×Ö½Úµ½socket£¬·µ»Øfuture¶ÔÏó²éÑ¯×´Ì¬,
-     * ÆäÖĞheadºÍtailÊÇÔÚ´«ÊäÎÄ¼şÇ°ºóĞ´ÈëµÄÊı¾İ£¬¿ÉÒÔÎªnull
+     * ä»æŒ‡å®šFileChannelçš„positionä½ç½®å¼€å§‹ä¼ è¾“sizeä¸ªå­—èŠ‚åˆ°socketï¼Œè¿”å›futureå¯¹è±¡æŸ¥è¯¢çŠ¶æ€,
+     * å…¶ä¸­headå’Œtailæ˜¯åœ¨ä¼ è¾“æ–‡ä»¶å‰åå†™å…¥çš„æ•°æ®ï¼Œå¯ä»¥ä¸ºnull
      * 
      * @param src
      * @param position
@@ -117,8 +117,8 @@ public interface NioSession extends Session {
 
 
     /**
-     * ´ÓÖ¸¶¨FileChannelµÄpositionÎ»ÖÃ¿ªÊ¼´«Êäsize¸ö×Ö½Úµ½socket£¬ÆäÖĞheadºÍtailÊÇÔÚ´«ÊäÎÄ¼şÇ°ºóĞ´ÈëµÄÊı¾İ£¬
-     * ¿ÉÒÔÎªnull
+     * ä»æŒ‡å®šFileChannelçš„positionä½ç½®å¼€å§‹ä¼ è¾“sizeä¸ªå­—èŠ‚åˆ°socketï¼Œå…¶ä¸­headå’Œtailæ˜¯åœ¨ä¼ è¾“æ–‡ä»¶å‰åå†™å…¥çš„æ•°æ®ï¼Œ
+     * å¯ä»¥ä¸ºnull
      * 
      * @param src
      * @param position

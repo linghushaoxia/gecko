@@ -22,11 +22,11 @@ import com.taobao.gecko.service.notify.OpCode;
 
 /**
  * 
- * ĞÄÌøÃüÁî
+ * å¿ƒè·³å‘½ä»¤
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-18 ÏÂÎç03:26:36
+ * @since 1.0, 2009-12-18 ä¸‹åˆ03:26:36
  */
 
 public class NotifyHeartBeatCommand extends NotifyRequestCommand implements HeartBeatRequestCommand {

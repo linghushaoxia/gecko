@@ -32,11 +32,11 @@ import com.taobao.gecko.service.notify.response.NotifyDummyAckCommand;
 
 /**
  * 
- * 用于单元测试的processor
+ * 鐢ㄤ簬鍗曞厓娴嬭瘯鐨刾rocessor
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-22 下午01:17:13
+ * @since 1.0, 2009-12-22 涓嬪崍01:17:13
  */
 
 final class DummyRequestProcessor implements RequestProcessor<NotifyDummyRequestCommand> {

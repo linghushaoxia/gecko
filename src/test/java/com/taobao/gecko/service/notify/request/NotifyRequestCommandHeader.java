@@ -20,7 +20,7 @@ import com.taobao.gecko.service.notify.OpCode;
 
 
 /**
- * Notify的请求协议头
+ * Notify鐨勮姹傚崗璁ご
  * 
  * @author dennis
  * 

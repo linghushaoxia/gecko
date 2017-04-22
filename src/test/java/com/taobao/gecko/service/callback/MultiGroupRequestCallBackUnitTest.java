@@ -52,7 +52,7 @@ import com.taobao.gecko.service.notify.response.NotifyDummyAckCommand;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-21 下午05:52:21
+ * @since 1.0, 2009-12-21 涓嬪崍05:52:21
  */
 
 public class MultiGroupRequestCallBackUnitTest {
@@ -128,7 +128,7 @@ public class MultiGroupRequestCallBackUnitTest {
                 Assert.assertEquals("error", ((BooleanAckCommand) response).getErrorMsg());
             }
             else {
-                throw new RuntimeException("无效结果");
+                throw new RuntimeException("鏃犳晥缁撴灉");
             }
         }
 

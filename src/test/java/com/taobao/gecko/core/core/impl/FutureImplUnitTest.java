@@ -34,7 +34,7 @@ import com.taobao.gecko.core.core.impl.FutureImpl;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-24 ÉÏÎç11:04:22
+ * @since 1.0, 2009-12-24 ä¸Šåˆ11:04:22
  */
 
 public class FutureImplUnitTest {

@@ -22,7 +22,7 @@ import com.taobao.gecko.service.exception.NotifyRemotingException;
 
 
 /**
- * UDP¿Í»§¶Ë
+ * UDPå®¢æˆ·ç«¯
  * 
  * @author boyan
  * @Date 2010-8-26
@@ -31,7 +31,7 @@ import com.taobao.gecko.service.exception.NotifyRemotingException;
 public interface UDPClient extends UDPController {
 
     /**
-     * ·¢ËÍUDPÏûÏ¢µ½Ö¸¶¨IP
+     * å‘é€UDPæ¶ˆæ¯åˆ°æŒ‡å®šIP
      * 
      * @param buffer
      */

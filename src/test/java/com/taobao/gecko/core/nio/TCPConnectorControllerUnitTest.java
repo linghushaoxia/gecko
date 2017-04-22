@@ -37,7 +37,7 @@ import com.taobao.gecko.core.core.impl.HandlerAdapter;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-25 …œŒÁ11:24:30
+ * @since 1.0, 2009-12-25 ‰∏äÂçà11:24:30
  */
 
 public class TCPConnectorControllerUnitTest extends AbstractControllerUnitTest {

@@ -17,11 +17,11 @@ package com.taobao.gecko.utils;
 
 /**
  * 
- * 用于测试的时间监视器
+ * 鐢ㄤ簬娴嬭瘯鐨勬椂闂寸洃瑙嗗櫒
  * 
  * @author boyan
  * 
- * @since 1.0, 2010-1-11 下午03:09:20
+ * @since 1.0, 2010-1-11 涓嬪崍03:09:20
  */
 
 public final class ClockWatch implements Runnable {

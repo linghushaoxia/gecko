@@ -31,11 +31,11 @@ import com.taobao.gecko.service.notify.response.NotifyDummyAckCommand;
 /**
  * 
  * 
- * Ğ­ÒéÃüÁî¹¤³§Àà£¬ÈÎºÎÊµÏÖµÄĞ­Òé¶¼ĞèÒªÔÚ´Ë¹¤³§×¢²á£¬Ìá¹©¸ø±à½âÂëÆ÷Ê¹ÓÃ
+ * åè®®å‘½ä»¤å·¥å‚ç±»ï¼Œä»»ä½•å®ç°çš„åè®®éƒ½éœ€è¦åœ¨æ­¤å·¥å‚æ³¨å†Œï¼Œæä¾›ç»™ç¼–è§£ç å™¨ä½¿ç”¨
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-18 ÉÏÎç11:13:33
+ * @since 1.0, 2009-12-18 ä¸Šåˆ11:13:33
  */
 
 public final class NotifyCommandFactory implements CommandFactory {

@@ -19,7 +19,7 @@ import com.taobao.gecko.service.Connection;
 
 
 /**
- * 扫描无效的callBack任务
+ * 鎵弿鏃犳晥鐨刢allBack浠诲姟
  * 
  * @author boyan
  * @Date 2010-5-26

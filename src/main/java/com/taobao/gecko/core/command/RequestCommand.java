@@ -16,16 +16,16 @@
 package com.taobao.gecko.core.command;
 
 /**
- * ÇëÇóÃüÁî¹«¹²½Ó¿Ú
+ * è¯·æ±‚å‘½ä»¤å…¬å…±æ¥å£
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç05:55:07
+ * @since 1.0, 2009-12-16 ä¸‹åˆ05:55:07
  */
 public interface RequestCommand extends CommandHeader {
 
     /**
-     * ·µ»ØÇëÇóµÄÍ·²¿£¬ÓÃÓÚ±£´æÔÚcallBackÖĞ
+     * è¿”å›è¯·æ±‚çš„å¤´éƒ¨ï¼Œç”¨äºä¿å­˜åœ¨callBackä¸­
      * 
      * @return
      */

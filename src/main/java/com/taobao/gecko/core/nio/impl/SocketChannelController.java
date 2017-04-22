@@ -32,13 +32,13 @@ import com.taobao.gecko.core.nio.NioSessionConfig;
 
 
 /**
- * Nio tcpÊµÏÖ
+ * Nio tcpå®ç°
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:18:00
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:18:00
  */
 public abstract class SocketChannelController extends NioController {
 

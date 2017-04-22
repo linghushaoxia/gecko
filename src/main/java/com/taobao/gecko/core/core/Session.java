@@ -23,13 +23,13 @@ import java.util.concurrent.Future;
 
 
 /**
- * 连接抽象
+ * 杩炴帴鎶借薄
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 下午06:01:17
+ * @since 1.0, 2009-12-16 涓嬪崍06:01:17
  */
 public interface Session {
 
@@ -90,7 +90,7 @@ public interface Session {
 
 
     /**
-     * 获取本地ip地址
+     * 鑾峰彇鏈湴ip鍦板潃
      * 
      * @return
      */

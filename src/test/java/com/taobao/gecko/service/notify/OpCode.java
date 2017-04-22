@@ -16,11 +16,11 @@
 package com.taobao.gecko.service.notify;
 
 /**
- * ÃüÁîÂë
+ * å‘½ä»¤ç 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç05:54:52
+ * @since 1.0, 2009-12-16 ä¸‹åˆ05:54:52
  */
 
 public enum OpCode {

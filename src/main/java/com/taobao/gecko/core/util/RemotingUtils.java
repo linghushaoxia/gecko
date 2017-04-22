@@ -31,13 +31,13 @@ import com.taobao.gecko.service.config.WireFormatType;
 
 
 /**
- * Remoting¹¤¾ßÀà
+ * Remotingå·¥å…·ç±»
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:21:51
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:21:51
  */
 public class RemotingUtils {
 
@@ -55,7 +55,7 @@ public class RemotingUtils {
     }
 
 
-    // ±éÀúÍø¿¨£¬²éÕÒÒ»¸ö·Ç»ØÂ·ipµØÖ·²¢·µ»Ø£¬Èç¹ûÃ»ÓĞÕÒµ½£¬Ôò·µ»ØInetAddress.getLocalHost()
+    // éå†ç½‘å¡ï¼ŒæŸ¥æ‰¾ä¸€ä¸ªéå›è·¯ipåœ°å€å¹¶è¿”å›ï¼Œå¦‚æœæ²¡æœ‰æ‰¾åˆ°ï¼Œåˆ™è¿”å›InetAddress.getLocalHost()
     public static InetAddress getLocalHostAddress() throws UnknownHostException, SocketException {
         final Enumeration<NetworkInterface> enumeration = NetworkInterface.getNetworkInterfaces();
         InetAddress ipv6Address = null;
@@ -69,14 +69,14 @@ public class RemotingUtils {
                         ipv6Address = address;
                     }
                     else {
-                        // ÓÅÏÈÊ¹ÓÃipv4
+                        // ä¼˜å…ˆä½¿ç”¨ipv4
                         return address;
                     }
                 }
             }
 
         }
-        // Ã»ÓĞipv4£¬ÔòÊ¹ÓÃipv6
+        // æ²¡æœ‰ipv4ï¼Œåˆ™ä½¿ç”¨ipv6
         if (ipv6Address != null) {
             return ipv6Address;
         }

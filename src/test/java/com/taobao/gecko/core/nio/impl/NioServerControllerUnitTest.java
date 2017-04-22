@@ -30,7 +30,7 @@ import com.taobao.gecko.core.core.impl.AbstractControllerUnitTest;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-25 …œŒÁ11:09:06
+ * @since 1.0, 2009-12-25 ‰∏äÂçà11:09:06
  */
 
 public abstract class NioServerControllerUnitTest extends AbstractControllerUnitTest {

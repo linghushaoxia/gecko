@@ -46,7 +46,7 @@ import com.taobao.gecko.core.nio.impl.TimerRef;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-21 ÏÂÎç02:27:15
+ * @since 1.0, 2009-12-21 ä¸‹åˆ02:27:15
  */
 
 public class MockSession implements NioSession {

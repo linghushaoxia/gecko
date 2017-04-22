@@ -170,7 +170,7 @@ public class HashedWheelTimer implements Timer {
 
 
     /**
-     * 返回当前timer个数
+     * 杩斿洖褰撳墠timer涓暟
      * 
      * @return
      */

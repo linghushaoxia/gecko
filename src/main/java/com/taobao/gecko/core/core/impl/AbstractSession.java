@@ -43,13 +43,13 @@ import com.taobao.gecko.service.exception.NotifyRemotingException;
 
 
 /**
- * Á¬½Ó³éÏó»ùÀà
+ * è¿æ¥æŠ½è±¡åŸºç±»
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:04:05
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:04:05
  */
 public abstract class AbstractSession implements Session {
 
@@ -204,10 +204,10 @@ public abstract class AbstractSession implements Session {
     }
 
 
-    // Í¬²½£¬·ÀÖ¹¶à¸öreactor²¢·¢µ÷ÓÃ´Ë·½·¨
+    // åŒæ­¥ï¼Œé˜²æ­¢å¤šä¸ªreactorå¹¶å‘è°ƒç”¨æ­¤æ–¹æ³•
     protected synchronized void onIdle() {
         try {
-            // ÔÙ´Î¼ì²â£¬·ÀÖ¹ÖØ¸´µ÷ÓÃ
+            // å†æ¬¡æ£€æµ‹ï¼Œé˜²æ­¢é‡å¤è°ƒç”¨
             if (this.isIdle()) {
                 this.onIdle0();
                 this.handler.onSessionIdle(this);
@@ -315,7 +315,7 @@ public abstract class AbstractSession implements Session {
 
     public final void close() {
         this.setClosed(true);
-        // ¼ÓÈë¶¾Íèµ½¶ÓÁĞ
+        // åŠ å…¥æ¯’ä¸¸åˆ°é˜Ÿåˆ—
         this.addPoisonWriteMessage(new PoisonWriteMessage());
 
     }
@@ -341,7 +341,7 @@ public abstract class AbstractSession implements Session {
             log.error("Close session error", e);
         }
         finally {
-            // Èç¹û×îºóÒ»¸öÏûÏ¢ÒÑ¾­ÍêÈ«Ğ´Èë£¬¸æÖªÓÃ»§
+            // å¦‚æœæœ€åä¸€ä¸ªæ¶ˆæ¯å·²ç»å®Œå…¨å†™å…¥ï¼Œå‘ŠçŸ¥ç”¨æˆ·
             final WriteMessage writeMessage = this.writeQueue.poll();
             if (writeMessage != null && !writeMessage.hasRemaining()) {
                 this.onMessageSent(writeMessage);
@@ -349,7 +349,7 @@ public abstract class AbstractSession implements Session {
 
             for (final WriteMessage msg : this.writeQueue) {
                 if (msg != null && msg.getWriteFuture() != null) {
-                    msg.getWriteFuture().failure(new NotifyRemotingException("Á¬½ÓÒÑ¾­¹Ø±Õ"));
+                    msg.getWriteFuture().failure(new NotifyRemotingException("è¿æ¥å·²ç»å…³é—­"));
                 }
             }
             this.onClosed();
@@ -463,7 +463,7 @@ public abstract class AbstractSession implements Session {
     public Future<Boolean> asyncWrite(final Object packet) {
         if (this.isClosed()) {
             final FutureImpl<Boolean> writeFuture = new FutureImpl<Boolean>();
-            writeFuture.failure(new IOException("Á¬½ÓÒÑ¾­±»¹Ø±Õ"));
+            writeFuture.failure(new IOException("è¿æ¥å·²ç»è¢«å…³é—­"));
             return writeFuture;
         }
         if (packet == null) {

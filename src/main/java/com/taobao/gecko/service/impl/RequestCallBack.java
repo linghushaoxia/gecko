@@ -23,40 +23,40 @@ import com.taobao.gecko.service.Connection;
 /**
  * 
  * 
- * ÇëÇó»Øµ÷µÄ¹«¹²½Ó¿Ú
+ * è¯·æ±‚å›è°ƒçš„å…¬å…±æ¥å£
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç01:13:41
+ * @since 1.0, 2009-12-16 ä¸‹åˆ01:13:41
  */
 
 public interface RequestCallBack {
 
     /**
-     * ÅĞ¶Ï»Øµ÷ÊÇ·ñ¹ıÆÚ
+     * åˆ¤æ–­å›è°ƒæ˜¯å¦è¿‡æœŸ
      * 
      * @param now
-     *            µ±Ç°Ê±¼ä
+     *            å½“å‰æ—¶é—´
      * @return
      */
     public boolean isInvalid(long now);
 
 
     /**
-     * µ±ÏìÓ¦µ½´ïµÄÊ±£¬´¥·¢´Ë·½·¨
+     * å½“å“åº”åˆ°è¾¾çš„æ—¶ï¼Œè§¦å‘æ­¤æ–¹æ³•
      * 
      * @param group
-     *            Ó¦´ğµÄ·Ö×éÃû
+     *            åº”ç­”çš„åˆ†ç»„å
      * @param responseCommand
-     *            Ó¦´ğÃüÁî
+     *            åº”ç­”å‘½ä»¤
      * @param connection
-     *            Ó¦´ğµÄÁ¬½Ó
+     *            åº”ç­”çš„è¿æ¥
      */
     public void onResponse(String group, ResponseCommand responseCommand, Connection connection);
 
 
     /**
-     * ÉèÖÃÒì³£
+     * è®¾ç½®å¼‚å¸¸
      * 
      * @param e
      * @param conn

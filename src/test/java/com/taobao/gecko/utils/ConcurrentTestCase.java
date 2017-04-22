@@ -20,11 +20,11 @@ import java.util.concurrent.CyclicBarrier;
 
 /**
  * 
- * 并发测试案例
+ * 骞跺彂娴嬭瘯妗堜緥
  * 
  * @author boyan
  * 
- * @since 1.0, 2010-1-11 下午03:14:28
+ * @since 1.0, 2010-1-11 涓嬪崍03:14:28
  */
 
 public class ConcurrentTestCase {

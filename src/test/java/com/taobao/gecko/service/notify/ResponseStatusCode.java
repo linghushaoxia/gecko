@@ -19,7 +19,7 @@ import com.taobao.gecko.core.command.ResponseStatus;
 
 
 /**
- * Gecko的错误类型到notify协议错误码的映射
+ * Gecko鐨勯敊璇被鍨嬪埌notify鍗忚閿欒鐮佺殑鏄犲皠
  * 
  * @author boyan(boyan@taobao.com)
  * @date 2011-11-2

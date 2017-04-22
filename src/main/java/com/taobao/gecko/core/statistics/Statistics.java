@@ -16,13 +16,13 @@
 package com.taobao.gecko.core.statistics;
 
 /**
- * Í³¼ÆÆ÷
+ * ç»Ÿè®¡å™¨
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:19:27
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:19:27
  */
 public interface Statistics {
 

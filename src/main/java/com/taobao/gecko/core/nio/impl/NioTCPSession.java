@@ -52,13 +52,13 @@ import com.taobao.gecko.core.util.SelectorFactory;
 
 
 /**
- * Nio tcpÁ¬½Ó
+ * Nio tcpè¿æ¥
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:09:15
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:09:15
  */
 public class NioTCPSession extends AbstractNioSession {
     private InetSocketAddress remoteAddress;
@@ -99,7 +99,7 @@ public class NioTCPSession extends AbstractNioSession {
     }
 
     /**
-     * Èç¹ûĞ´Èë·µ»ØÎª0£¬Ç¿ÖÆÑ­»·¶à´Î£¬Ìá¸ß·¢ËÍĞ§ÂÊ
+     * å¦‚æœå†™å…¥è¿”å›ä¸º0ï¼Œå¼ºåˆ¶å¾ªç¯å¤šæ¬¡ï¼Œæé«˜å‘é€æ•ˆç‡
      */
     static final int WRITE_SPIN_COUNT = Integer.parseInt(System.getProperty("notify.remoting.write_spin_count", "16"));
 
@@ -156,7 +156,7 @@ public class NioTCPSession extends AbstractNioSession {
 
 
     /**
-     * ×èÈûĞ´£¬²ÉÓÃtemp selectorÇ¿ÖÆĞ´Èë
+     * é˜»å¡å†™ï¼Œé‡‡ç”¨temp selectorå¼ºåˆ¶å†™å…¥
      * 
      * @param channel
      * @param message
@@ -237,7 +237,7 @@ public class NioTCPSession extends AbstractNioSession {
         try {
             while ((n = ((ReadableByteChannel) this.selectableChannel).read(this.readBuffer.buf())) > 0) {
                 readCount += n;
-                // readBufferÃ»ÓĞ¿Õ¼ä£¬Ìø³öÑ­»·
+                // readBufferæ²¡æœ‰ç©ºé—´ï¼Œè·³å‡ºå¾ªç¯
                 if (!this.readBuffer.hasRemaining()) {
                     break;
                 }
@@ -267,7 +267,7 @@ public class NioTCPSession extends AbstractNioSession {
             }
         }
         catch (final ClosedChannelException e) {
-            // ignore£¬²»ĞèÒªÓÃ»§ÖªµÀ
+            // ignoreï¼Œä¸éœ€è¦ç”¨æˆ·çŸ¥é“
             this.close0();
         }
         catch (final Throwable e) {
@@ -317,7 +317,7 @@ public class NioTCPSession extends AbstractNioSession {
 
 
     /**
-     * ½âÂë²¢ÅÉ·¢ÏûÏ¢
+     * è§£ç å¹¶æ´¾å‘æ¶ˆæ¯
      */
     @Override
     public void decode() {
@@ -390,7 +390,7 @@ public class NioTCPSession extends AbstractNioSession {
 
     @Override
     protected final void closeChannel() throws IOException {
-        // ÓÅÏÈ¹Ø±ÕÊä³öÁ÷
+        // ä¼˜å…ˆå…³é—­è¾“å‡ºæµ
         try {
             if (this.selectableChannel instanceof SocketChannel) {
                 final Socket socket = ((SocketChannel) this.selectableChannel).socket();

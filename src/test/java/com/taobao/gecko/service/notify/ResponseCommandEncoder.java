@@ -25,11 +25,11 @@ import com.taobao.gecko.service.notify.response.NotifyResponseCommand;
  * 
  * 
  * 
- * Ó¦´ğÃüÁî±àÂëÆ÷
+ * åº”ç­”å‘½ä»¤ç¼–ç å™¨
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç05:54:03
+ * @since 1.0, 2009-12-16 ä¸‹åˆ05:54:03
  */
 public class ResponseCommandEncoder implements CodecFactory.Encoder {
 

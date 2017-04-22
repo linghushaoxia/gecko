@@ -21,13 +21,13 @@ import com.taobao.gecko.core.buffer.IoBuffer;
 
 
 /**
- * ByteBufferÆ¥ÅäÆ÷
+ * ByteBufferåŒ¹é…å™¨
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:19:40
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:19:40
  */
 public interface ByteBufferMatcher {
 

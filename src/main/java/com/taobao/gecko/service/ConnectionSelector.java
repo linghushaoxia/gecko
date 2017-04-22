@@ -23,23 +23,23 @@ import com.taobao.gecko.service.exception.NotifyRemotingException;
 
 /**
  * 
- * Ñ¡ÔñÁ¬½Ó²ßÂÔ
+ * é€‰æ‹©è¿æ¥ç­–ç•¥
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-15 ÏÂÎç05:00:54
+ * @since 1.0, 2009-12-15 ä¸‹åˆ05:00:54
  */
 
 public interface ConnectionSelector {
     /**
-     * ´Ó·Ö×éµÄÁ¬½ÓÁĞ±íÖĞÑ¡ÔñÏëÒªµÄÁ¬½Ó
+     * ä»åˆ†ç»„çš„è¿æ¥åˆ—è¡¨ä¸­é€‰æ‹©æƒ³è¦çš„è¿æ¥
      * 
      * @param targetGroup
-     *            ·Ö×éÃû³Æ
+     *            åˆ†ç»„åç§°
      * @param request
-     *            ÇëÇóÃüÁî
+     *            è¯·æ±‚å‘½ä»¤
      * @param connectionList
-     *            ·Ö×éµÄÁ¬½ÓÁĞ±í
+     *            åˆ†ç»„çš„è¿æ¥åˆ—è¡¨
      * @return
      */
     public Connection select(String targetGroup, RequestCommand request, List<Connection> connectionList)

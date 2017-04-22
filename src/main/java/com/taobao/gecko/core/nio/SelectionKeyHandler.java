@@ -34,7 +34,7 @@ import com.taobao.gecko.core.nio.impl.TimerRef;
 
 
 /**
- * SelectionKey´¦ÀíÆ÷
+ * SelectionKeyå¤„ç†å™¨
  * 
  * @see com.taobao.gecko.core.core.impl.AbstractController
  * @author dennis

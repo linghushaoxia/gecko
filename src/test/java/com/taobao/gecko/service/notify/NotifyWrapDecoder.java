@@ -28,7 +28,7 @@ import com.taobao.gecko.core.util.RemotingUtils;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 下午05:52:51
+ * @since 1.0, 2009-12-16 涓嬪崍05:52:51
  */
 public class NotifyWrapDecoder implements CodecFactory.Decoder {
     private final RequestCommandDecoder requestDecoder;
@@ -102,7 +102,7 @@ public class NotifyWrapDecoder implements CodecFactory.Decoder {
 
 
     /**
-     * 从连接属性中获取当前的decode状态，如果不存在就创建
+     * 浠庤繛鎺ュ睘鎬т腑鑾峰彇褰撳墠鐨刣ecode鐘舵�侊紝濡傛灉涓嶅瓨鍦ㄥ氨鍒涘缓
      * 
      * @param session
      * @return

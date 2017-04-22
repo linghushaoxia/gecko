@@ -24,16 +24,16 @@ import java.net.InetSocketAddress;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-15 上午11:12:23
+ * @since 1.0, 2009-12-15 涓婂崍11:12:23
  */
 
 public final class ServerConfig extends BaseConfig {
     /**
-     * 端口
+     * 绔彛
      */
     private int port = 9527;
     /**
-     * backlog队列大小
+     * backlog闃熷垪澶у皬
      */
     private int backlog = 1000;
 

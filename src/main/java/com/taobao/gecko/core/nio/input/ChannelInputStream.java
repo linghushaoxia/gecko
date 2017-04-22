@@ -23,13 +23,13 @@ import com.taobao.gecko.core.util.ByteBufferUtils;
 
 
 /**
- * Á÷Ê½API¶Á
+ * æµå¼APIè¯»
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:18:27
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:18:27
  */
 public class ChannelInputStream extends InputStream {
     public final ByteBuffer messageBuffer;

@@ -22,11 +22,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * 
- * 重连任务
+ * 閲嶈繛浠诲姟
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 下午05:46:58
+ * @since 1.0, 2009-12-16 涓嬪崍05:46:58
  */
 
 public final class ReconnectTask {

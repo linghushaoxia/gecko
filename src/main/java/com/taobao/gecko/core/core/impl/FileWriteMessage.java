@@ -24,7 +24,7 @@ import com.taobao.gecko.core.core.WriteMessage;
 
 
 /**
- * Ğ´ÎÄ¼şÏûÏ¢
+ * å†™æ–‡ä»¶æ¶ˆæ¯
  * 
  * @author boyan
  * @Date 2011-4-20
@@ -103,7 +103,7 @@ public class FileWriteMessage implements WriteMessage {
     }
 
     /**
-     * Èç¹ûĞ´Èë·µ»ØÎª0£¬Ç¿ÖÆÑ­»·¶à´Î£¬Ìá¸ß·¢ËÍĞ§ÂÊ
+     * å¦‚æœå†™å…¥è¿”å›ä¸º0ï¼Œå¼ºåˆ¶å¾ªç¯å¤šæ¬¡ï¼Œæé«˜å‘é€æ•ˆç‡
      */
     static final int WRITE_SPIN_COUNT = Integer.parseInt(System.getProperty("notify.remoting.write_spin_count", "16"));
 
@@ -120,7 +120,7 @@ public class FileWriteMessage implements WriteMessage {
                     break;
                 }
             }
-            // Í·Ã»ÓĞÍêÈ«Ğ´Èë£¬Ö±½Ó·µ»Ø
+            // å¤´æ²¡æœ‰å®Œå…¨å†™å…¥ï¼Œç›´æ¥è¿”å›
             if (this.hasHeadRemaining()) {
                 return transfered;
             }
@@ -136,7 +136,7 @@ public class FileWriteMessage implements WriteMessage {
                     break;
                 }
             }
-            // ÎÄ¼şÃ»ÓĞ´«ÊäÍê±Ï£¬Ö±½Ó·µ»Ø
+            // æ–‡ä»¶æ²¡æœ‰ä¼ è¾“å®Œæ¯•ï¼Œç›´æ¥è¿”å›
             if (this.hasFileRemaining()) {
                 return transfered;
             }

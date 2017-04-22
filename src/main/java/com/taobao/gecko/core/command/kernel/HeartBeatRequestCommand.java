@@ -19,7 +19,7 @@ import com.taobao.gecko.core.command.RequestCommand;
 
 
 /**
- * 心跳请求命令，仅是一个标记接口，用户需要实现此接口并实现相应的CommandFactory
+ * 蹇冭烦璇锋眰鍛戒护锛屼粎鏄竴涓爣璁版帴鍙ｏ紝鐢ㄦ埛闇�瑕佸疄鐜版鎺ュ彛骞跺疄鐜扮浉搴旂殑CommandFactory
  * 
  * @author boyan
  * 

@@ -40,7 +40,7 @@ import com.taobao.gecko.service.impl.RequestCallBack;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-23 œ¬ŒÁ01:37:39
+ * @since 1.0, 2009-12-23 ‰∏ãÂçà01:37:39
  */
 
 public class MockConnection implements Connection {

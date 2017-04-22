@@ -43,11 +43,11 @@ import com.taobao.gecko.service.exception.NotifyRemotingException;
 
 /**
  * 
- * RemotingClientµÄÄ¬ÈÏÊµÏÖ
+ * RemotingClientçš„é»˜è®¤å®ç°
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç03:42:14
+ * @since 1.0, 2009-12-16 ä¸‹åˆ03:42:14
  */
 
 public class DefaultRemotingClient extends BaseRemotingController implements RemotingClient, ConnectFailListener {
@@ -60,7 +60,7 @@ public class DefaultRemotingClient extends BaseRemotingController implements Rem
     public DefaultRemotingClient(final ClientConfig clientConfig) {
         super(clientConfig);
         this.config = clientConfig;
-        // Ä¬ÈÏ·Ö×éµÄ×î´óÁ¬½ÓÊıÉèÖÃÎªInteger.MAX_VALUE
+        // é»˜è®¤åˆ†ç»„çš„æœ€å¤§è¿æ¥æ•°è®¾ç½®ä¸ºInteger.MAX_VALUE
         this.setAttribute(Constants.DEFAULT_GROUP, Constants.CONNECTION_COUNT_ATTR, Integer.MAX_VALUE);
 
     }
@@ -75,9 +75,9 @@ public class DefaultRemotingClient extends BaseRemotingController implements Rem
             throw new IllegalArgumentException("null group");
         }
         if (!allowReconnect) {
-            // È¡ÏûÖØÁ¬ÈÎÎñ
+            // å–æ¶ˆé‡è¿ä»»åŠ¡
             this.reconnectManager.cancelReconnectGroup(group);
-            // É¾³ıÊôĞÔ
+            // åˆ é™¤å±æ€§
             this.attributes.remove(group);
         }
         final List<Connection> connections = this.remotingContext.getConnectionsByGroup(group);
@@ -110,7 +110,7 @@ public class DefaultRemotingClient extends BaseRemotingController implements Rem
     @Override
     public void connect(String url, String targetGroup, int connCount) throws NotifyRemotingException {
         if (connCount <= 0) {
-            throw new IllegalArgumentException("·Ç·¨Á¬½ÓÊı£¬±ØĞë´óÓÚ0");
+            throw new IllegalArgumentException("éæ³•è¿æ¥æ•°ï¼Œå¿…é¡»å¤§äº0");
         }
         url = url.trim();
         if (this.isGroupConnectPending(targetGroup)) {
@@ -122,11 +122,11 @@ public class DefaultRemotingClient extends BaseRemotingController implements Rem
         final Set<String> groupSet = new HashSet<String>();
         groupSet.add(targetGroup);
         this.reconnectManager.removeCanceledGroup(targetGroup);
-        // ÉèÖÃÁ¬½ÓÊıÊôĞÔ
+        // è®¾ç½®è¿æ¥æ•°å±æ€§
         if (this.setAttributeIfAbsent(targetGroup, Constants.CONNECTION_COUNT_ATTR, connCount) != null) {
             return;
         }
-        // ÉèÖÃÁ¬½Ó¾ÍĞ÷Ëø
+        // è®¾ç½®è¿æ¥å°±ç»ªé”
         if (this.setAttributeIfAbsent(targetGroup, Constants.GROUP_CONNECTION_READY_LOCK, new Object()) != null) {
             return;
         }
@@ -142,7 +142,7 @@ public class DefaultRemotingClient extends BaseRemotingController implements Rem
                 this.insertTimer(timerRef);
             }
             catch (final Exception e) {
-                log.error("Á¬½Ó" + RemotingUtils.getAddrString(remoteAddress) + "Ê§°Ü,Æô¶¯ÖØÁ¬ÈÎÎñ", e);
+                log.error("è¿æ¥" + RemotingUtils.getAddrString(remoteAddress) + "å¤±è´¥,å¯åŠ¨é‡è¿ä»»åŠ¡", e);
                 this.reconnectManager.addReconnectTask(new ReconnectTask(groupSet, remoteAddress));
             }
         }
@@ -157,7 +157,7 @@ public class DefaultRemotingClient extends BaseRemotingController implements Rem
 
 
     /**
-     * ÕâÀïĞèÒªÍ¬²½£¬·ÀÖ¹¶ÔÍ¬Ò»¸ö·Ö×é·¢Æğ¶à¸öÇëÇó
+     * è¿™é‡Œéœ€è¦åŒæ­¥ï¼Œé˜²æ­¢å¯¹åŒä¸€ä¸ªåˆ†ç»„å‘èµ·å¤šä¸ªè¯·æ±‚
      */
     @Override
     public synchronized void connect(String group, final int connCount) throws NotifyRemotingException {
@@ -166,7 +166,7 @@ public class DefaultRemotingClient extends BaseRemotingController implements Rem
 
 
     /**
-     * ÅĞ¶Ï·Ö×éÊÇ·ñ·¢Æğ¹ıÁ¬½ÓÇëÇó
+     * åˆ¤æ–­åˆ†ç»„æ˜¯å¦å‘èµ·è¿‡è¿æ¥è¯·æ±‚
      * 
      * @param group
      * @return
@@ -183,13 +183,13 @@ public class DefaultRemotingClient extends BaseRemotingController implements Rem
     }
 
     /**
-     * ¼ì²âÁ¬½Ó½¨Á¢ÊÇ·ñ³É¹¦
+     * æ£€æµ‹è¿æ¥å»ºç«‹æ˜¯å¦æˆåŠŸ
      * 
      * 
      * 
      * @author boyan
      * 
-     * @since 1.0, 2009-12-23 ÏÂÎç01:49:41
+     * @since 1.0, 2009-12-23 ä¸‹åˆ01:49:41
      */
     public static final class CheckConnectFutureRunner implements Runnable {
         final Future<NioSession> future;
@@ -216,7 +216,7 @@ public class DefaultRemotingClient extends BaseRemotingController implements Rem
                 }
             }
             catch (final Exception e) {
-                log.error("Á¬½Ó" + this.remoteAddress + "Ê§°Ü", e);
+                log.error("è¿æ¥" + this.remoteAddress + "å¤±è´¥", e);
                 this.addReconnectTask();
             }
         }
@@ -236,14 +236,14 @@ public class DefaultRemotingClient extends BaseRemotingController implements Rem
         }
         group = group.trim();
         if (!group.startsWith(this.config.getWireFormatType().getScheme())) {
-            throw new NotifyRemotingException("·Ç·¨µÄGroup¸ñÊ½£¬Ã»ÓĞÒÔ" + this.config.getWireFormatType().getScheme() + "¿ªÍ·");
+            throw new NotifyRemotingException("éæ³•çš„Groupæ ¼å¼ï¼Œæ²¡æœ‰ä»¥" + this.config.getWireFormatType().getScheme() + "å¼€å¤´");
         }
         try {
             final URI uri = new URI(group);
             return new InetSocketAddress(uri.getHost(), uri.getPort());
         }
         catch (final Exception e) {
-            throw new NotifyRemotingException("´ÓuriÉú³É·şÎñÆ÷µØÖ·³ö´í,url=" + group, e);
+            throw new NotifyRemotingException("ä»uriç”ŸæˆæœåŠ¡å™¨åœ°å€å‡ºé”™,url=" + group, e);
         }
     }
 
@@ -260,7 +260,7 @@ public class DefaultRemotingClient extends BaseRemotingController implements Rem
         final Object readyLock = this.getAttribute(group, Constants.GROUP_CONNECTION_READY_LOCK);
         final Object attribute = this.getAttribute(group, Constants.CONNECTION_COUNT_ATTR);
         if (readyLock == null || attribute == null) {
-            throw new IllegalStateException("·Ç·¨×´Ì¬£¬Äã»¹Ã»ÓĞµ÷ÓÃconnect·½·¨½øĞĞÁ¬½Ó²Ù×÷¡£");
+            throw new IllegalStateException("éæ³•çŠ¶æ€ï¼Œä½ è¿˜æ²¡æœ‰è°ƒç”¨connectæ–¹æ³•è¿›è¡Œè¿æ¥æ“ä½œã€‚");
         }
         final long defaultConnectTimeout = ((ClientConfig) this.config).getConnectTimeout();
         this.awaitReadyInterrupt(group, defaultConnectTimeout * (Integer) attribute);
@@ -273,11 +273,11 @@ public class DefaultRemotingClient extends BaseRemotingController implements Rem
         if (StringUtils.isBlank(group)) {
             throw new IllegalArgumentException("Blank group");
         }
-        // »ñÈ¡·Ö×éÁ¬½Ó¾ÍĞ÷Ëø
+        // è·å–åˆ†ç»„è¿æ¥å°±ç»ªé”
         final Object readyLock = this.getAttribute(group, Constants.GROUP_CONNECTION_READY_LOCK);
         final Object attribute = this.getAttribute(group, Constants.CONNECTION_COUNT_ATTR);
         if (readyLock == null || attribute == null) {
-            throw new IllegalStateException("·Ç·¨×´Ì¬£¬Äã»¹Ã»ÓĞµ÷ÓÃconnect·½·¨½øĞĞÁ¬½Ó²Ù×÷¡£");
+            throw new IllegalStateException("éæ³•çŠ¶æ€ï¼Œä½ è¿˜æ²¡æœ‰è°ƒç”¨connectæ–¹æ³•è¿›è¡Œè¿æ¥æ“ä½œã€‚");
         }
         else {
             final int maxConnCount = (Integer) attribute;
@@ -288,7 +288,7 @@ public class DefaultRemotingClient extends BaseRemotingController implements Rem
                     readyLock.wait(1000);
                     totalTime += System.currentTimeMillis() - start;
                     if (totalTime >= time) {
-                        throw new NotifyRemotingException("µÈ´ıÁ¬½Ó¾ÍĞ÷³¬Ê±£¬³¬Ê±Ê±¼äÎª" + time + "ºÁÃë");
+                        throw new NotifyRemotingException("ç­‰å¾…è¿æ¥å°±ç»ªè¶…æ—¶ï¼Œè¶…æ—¶æ—¶é—´ä¸º" + time + "æ¯«ç§’");
                     }
                 }
             }
@@ -342,7 +342,7 @@ public class DefaultRemotingClient extends BaseRemotingController implements Rem
     @Override
     public void setClientConfig(final ClientConfig clientConfig) {
         if (this.controller != null && this.controller.isStarted()) {
-            throw new IllegalStateException("RemotingClientÒÑ¾­Æô¶¯£¬ÉèÖÃÎŞĞ§");
+            throw new IllegalStateException("RemotingClientå·²ç»å¯åŠ¨ï¼Œè®¾ç½®æ— æ•ˆ");
         }
         this.config = clientConfig;
     }
@@ -356,7 +356,7 @@ public class DefaultRemotingClient extends BaseRemotingController implements Rem
 
 
     private void startReconnectManager() {
-        // Æô¶¯ÖØÁ¬¹ÜÀíÆ÷
+        // å¯åŠ¨é‡è¿ç®¡ç†å™¨
         this.reconnectManager =
                 new ReconnectManager((GeckoTCPConnectorController) this.controller, (ClientConfig) this.config, this);
         ((GeckoHandler) this.controller.getHandler()).setReconnectManager(this.reconnectManager);
@@ -369,7 +369,7 @@ public class DefaultRemotingClient extends BaseRemotingController implements Rem
             this.controller.start();
         }
         catch (final IOException e) {
-            throw new NotifyRemotingException("Æô¶¯¿ØÖÆÆ÷³ö´í", e);
+            throw new NotifyRemotingException("å¯åŠ¨æ§åˆ¶å™¨å‡ºé”™", e);
         }
     }
 
@@ -382,11 +382,11 @@ public class DefaultRemotingClient extends BaseRemotingController implements Rem
 
 
     private void closeAllConnection() throws NotifyRemotingException {
-        // ¹Ø±ÕËùÓĞÁ¬½Ó
+        // å…³é—­æ‰€æœ‰è¿æ¥
         final List<Connection> connections = this.remotingContext.getConnectionsByGroup(Constants.DEFAULT_GROUP);
         if (connections != null) {
             for (final Connection conn : connections) {
-                ((DefaultConnection) conn).setReady(true);// Ç¿ÖÆÎª¾ÍĞ÷×´Ì¬
+                ((DefaultConnection) conn).setReady(true);// å¼ºåˆ¶ä¸ºå°±ç»ªçŠ¶æ€
                 conn.close(false);
             }
         }
@@ -399,7 +399,7 @@ public class DefaultRemotingClient extends BaseRemotingController implements Rem
 
 
     /**
-     * µ±Á¬½ÓÊ§°ÜµÄÊ±ºò»Øµ÷
+     * å½“è¿æ¥å¤±è´¥çš„æ—¶å€™å›è°ƒ
      */
     @Override
     @SuppressWarnings("unchecked")
@@ -420,7 +420,7 @@ public class DefaultRemotingClient extends BaseRemotingController implements Rem
     @Override
     protected SocketChannelController initController(final Configuration conf) {
         final GeckoTCPConnectorController notifyTCPConnectorController = new GeckoTCPConnectorController(conf);
-        // ÉèÖÃÁ¬½ÓÊ§°Ü¼àÌıÆ÷
+        // è®¾ç½®è¿æ¥å¤±è´¥ç›‘å¬å™¨
         notifyTCPConnectorController.setConnectFailListener(this);
         return notifyTCPConnectorController;
     }

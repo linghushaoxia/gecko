@@ -23,17 +23,17 @@ import com.taobao.gecko.core.command.ResponseCommand;
 
 /**
  * 
- * µ¥·Ö×éËùÓĞÁ¬½ÓµÄ»Øµ÷¼àÌıÆ÷
+ * å•åˆ†ç»„æ‰€æœ‰è¿æ¥çš„å›è°ƒç›‘å¬å™¨
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç03:26:36
+ * @since 1.0, 2009-12-16 ä¸‹åˆ03:26:36
  */
 
 public interface GroupAllConnectionCallBackListener {
 
     /**
-     * ´¦ÀíÓ¦´ğ
+     * å¤„ç†åº”ç­”
      * 
      * @param resultMap
      */

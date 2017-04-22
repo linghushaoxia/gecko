@@ -20,13 +20,13 @@ import java.util.concurrent.Future;
 
 
 /**
- * UDP连接抽象
+ * UDP杩炴帴鎶借薄
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 下午06:02:22
+ * @since 1.0, 2009-12-16 涓嬪崍06:02:22
  */
 public interface UDPSession extends Session {
     /**

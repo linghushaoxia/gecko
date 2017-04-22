@@ -16,12 +16,12 @@
 package com.taobao.gecko.core.core;
 
 /**
- * Controller生命周期接口
+ * Controller鐢熷懡鍛ㄦ湡鎺ュ彛
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 下午05:59:18
+ * @since 1.0, 2009-12-16 涓嬪崍05:59:18
  */
 
 public interface ControllerLifeCycle {

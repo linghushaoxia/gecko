@@ -19,7 +19,7 @@ import com.taobao.gecko.core.command.RequestCommand;
 
 
 /**
- * ÓÃÓÚ²âÊÔµÄÇëÇóÃüÁî½Ó¿Ú
+ * ç”¨äºæµ‹è¯•çš„è¯·æ±‚å‘½ä»¤æ¥å£
  * 
  * @author boyan
  * 
@@ -27,7 +27,7 @@ import com.taobao.gecko.core.command.RequestCommand;
 public interface DummyRequestCommand extends RequestCommand {
 
     /**
-     * ¸½¼Ó×Ö·û´®ĞÅÏ¢
+     * é™„åŠ å­—ç¬¦ä¸²ä¿¡æ¯
      * 
      * @return
      */

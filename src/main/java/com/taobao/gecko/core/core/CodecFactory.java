@@ -19,13 +19,13 @@ import com.taobao.gecko.core.buffer.IoBuffer;
 
 
 /**
- * 编解码工厂类
+ * 缂栬В鐮佸伐鍘傜被
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 下午05:57:19
+ * @since 1.0, 2009-12-16 涓嬪崍05:57:19
  */
 public interface CodecFactory {
 

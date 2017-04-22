@@ -22,11 +22,11 @@ import java.util.concurrent.Future;
 
 /**
  * 
- * 客户端单连接管理器，仅连接单个服务器
+ * 瀹㈡埛绔崟杩炴帴绠＄悊鍣紝浠呰繛鎺ュ崟涓湇鍔″櫒
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-25 下午01:12:47
+ * @since 1.0, 2009-12-25 涓嬪崍01:12:47
  */
 
 public interface SingleConnector {

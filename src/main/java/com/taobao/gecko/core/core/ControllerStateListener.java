@@ -18,11 +18,11 @@ package com.taobao.gecko.core.core;
 /**
  * 
  * 
- * ControllerÉúÃüÖÜÆÚ¼àÌıÆ÷
+ * Controllerç”Ÿå‘½å‘¨æœŸç›‘å¬å™¨
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç05:59:44
+ * @since 1.0, 2009-12-16 ä¸‹åˆ05:59:44
  */
 public interface ControllerStateListener {
 

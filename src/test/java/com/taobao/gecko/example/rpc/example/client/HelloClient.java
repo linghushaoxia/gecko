@@ -24,7 +24,7 @@ public class HelloClient {
     public static void main(String[] args) throws Exception {
         RpcProxyFactory factory = new RpcProxyFactory();
         Hello hello = factory.proxyRemote("rpc://localhost:8080", "hello", Hello.class);
-        System.out.println(hello.sayHello("×¯Ïþµ¤", 10000));
+        System.out.println(hello.sayHello("åº„æ™“ä¸¹", 10000));
         long start = System.currentTimeMillis();
         for (int i = 0; i < 10000; i++) {
             hello.add(1, 300);

@@ -19,13 +19,13 @@ import java.net.InetSocketAddress;
 
 
 /**
- * Ó¦´ğÃüÁî¹«¹²½Ó¿Ú
+ * åº”ç­”å‘½ä»¤å…¬å…±æ¥å£
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç05:55:15
+ * @since 1.0, 2009-12-16 ä¸‹åˆ05:55:15
  */
 
 public interface ResponseCommand extends CommandHeader {
@@ -33,7 +33,7 @@ public interface ResponseCommand extends CommandHeader {
 
 
     /**
-     * ·µ»ØÏìÓ¦×´Ì¬
+     * è¿”å›å“åº”çŠ¶æ€
      * 
      * @return
      */
@@ -41,7 +41,7 @@ public interface ResponseCommand extends CommandHeader {
 
 
     /**
-     * ÉèÖÃÏìÓ¦×´Ì¬
+     * è®¾ç½®å“åº”çŠ¶æ€
      * 
      * @param responseStatus
      */
@@ -49,7 +49,7 @@ public interface ResponseCommand extends CommandHeader {
 
 
     /**
-     * ÊÇ·ñÎªBooleanAckCommand
+     * æ˜¯å¦ä¸ºBooleanAckCommand
      * 
      * @return
      */
@@ -57,7 +57,7 @@ public interface ResponseCommand extends CommandHeader {
 
 
     /**
-     * ·µ»ØÏìÓ¦µÄÔ¶¶ËµØÖ·
+     * è¿”å›å“åº”çš„è¿œç«¯åœ°å€
      * 
      * @return
      */
@@ -65,7 +65,7 @@ public interface ResponseCommand extends CommandHeader {
 
 
     /**
-     * ÉèÖÃÏìÓ¦µÄÔ¶¶ËµØÖ·
+     * è®¾ç½®å“åº”çš„è¿œç«¯åœ°å€
      * 
      * @param address
      */
@@ -73,7 +73,7 @@ public interface ResponseCommand extends CommandHeader {
 
 
     /**
-     * ·µ»ØÏìÓ¦µÄÊ±¼ä´Á
+     * è¿”å›å“åº”çš„æ—¶é—´æˆ³
      * 
      * @return
      */
@@ -81,7 +81,7 @@ public interface ResponseCommand extends CommandHeader {
 
 
     /**
-     * ÉèÖÃÏìÓ¦Ê±¼ä´Á
+     * è®¾ç½®å“åº”æ—¶é—´æˆ³
      * 
      * @param time
      */
@@ -89,7 +89,7 @@ public interface ResponseCommand extends CommandHeader {
 
 
     /**
-     * ÉèÖÃÏìÓ¦µÄopaque
+     * è®¾ç½®å“åº”çš„opaque
      * 
      * @param opaque
      */

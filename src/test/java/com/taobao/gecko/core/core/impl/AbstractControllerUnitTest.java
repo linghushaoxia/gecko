@@ -31,7 +31,7 @@ import com.taobao.gecko.core.nio.TCPController;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-25 …œŒÁ11:04:49
+ * @since 1.0, 2009-12-25 ‰∏äÂçà11:04:49
  */
 
 public abstract class AbstractControllerUnitTest {

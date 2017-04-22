@@ -28,15 +28,15 @@ import com.taobao.gecko.service.GroupAllConnectionCallBackListener;
 /**
  * 
  * 
- * 单个分组所有连接的请求回调
+ * 鍗曚釜鍒嗙粍鎵�鏈夎繛鎺ョ殑璇锋眰鍥炶皟
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 下午03:29:41
+ * @since 1.0, 2009-12-16 涓嬪崍03:29:41
  */
 
 public class GroupAllConnectionRequestCallBack extends AbstractRequestCallBack {
-    private final ConcurrentHashMap<Connection, ResponseCommand> resultMap; // 应答结果集合
+    private final ConcurrentHashMap<Connection, ResponseCommand> resultMap; // 搴旂瓟缁撴灉闆嗗悎
     private final GroupAllConnectionCallBackListener listener;
     private boolean responsed;
 

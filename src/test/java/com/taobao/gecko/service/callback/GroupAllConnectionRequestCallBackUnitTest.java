@@ -49,7 +49,7 @@ import com.taobao.gecko.service.notify.response.NotifyDummyAckCommand;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-22 下午03:49:55
+ * @since 1.0, 2009-12-22 涓嬪崍03:49:55
  */
 
 public class GroupAllConnectionRequestCallBackUnitTest {
@@ -111,7 +111,7 @@ public class GroupAllConnectionRequestCallBackUnitTest {
                 Assert.assertEquals("error", ((BooleanAckCommand) response).getErrorMsg());
             }
             else {
-                throw new RuntimeException("无效结果");
+                throw new RuntimeException("鏃犳晥缁撴灉");
             }
         }
 

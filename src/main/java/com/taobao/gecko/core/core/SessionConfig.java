@@ -21,13 +21,13 @@ import com.taobao.gecko.core.statistics.Statistics;
 
 
 /**
- * Á¬½ÓÅäÖÃ
+ * è¿æ¥é…ç½®
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:01:37
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:01:37
  */
 public class SessionConfig {
     public final Handler handler;

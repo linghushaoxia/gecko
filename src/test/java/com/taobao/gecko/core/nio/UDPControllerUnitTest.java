@@ -26,7 +26,7 @@ import com.taobao.gecko.core.nio.impl.NioServerControllerUnitTest;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-25 …œŒÁ11:21:45
+ * @since 1.0, 2009-12-25 ‰∏äÂçà11:21:45
  */
 
 public class UDPControllerUnitTest extends NioServerControllerUnitTest {

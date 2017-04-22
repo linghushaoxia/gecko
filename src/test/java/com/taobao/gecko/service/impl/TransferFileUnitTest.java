@@ -40,7 +40,7 @@ import com.taobao.gecko.service.notify.request.NotifyDummyRequestCommand;
 
 
 /**
- * ÎÄ¼ş´«Êäµ¥Ôª²âÊÔ
+ * æ–‡ä»¶ä¼ è¾“å•å…ƒæµ‹è¯•
  * 
  * @author boyan
  * @Date 2011-4-20
@@ -58,7 +58,7 @@ public class TransferFileUnitTest {
         final RemotingServer server = RemotingFactory.bind(serverConfig);
         final String url = server.getConnectURI().toString();
 
-        // ÁÙÊ±ÎÄ¼ş£¬Ğ´Èë7¸ö×Ö·û
+        // ä¸´æ—¶æ–‡ä»¶ï¼Œå†™å…¥7ä¸ªå­—ç¬¦
         final File file = File.createTempFile("remoting", "test");
         file.delete();
         final FileChannel channel = new RandomAccessFile(file, "rw").getChannel();

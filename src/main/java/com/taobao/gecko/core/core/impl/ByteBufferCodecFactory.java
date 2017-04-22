@@ -21,13 +21,13 @@ import com.taobao.gecko.core.core.Session;
 
 
 /**
- * 编解码工厂的一个默认实现，直接发送IoBuffer
+ * 缂栬В鐮佸伐鍘傜殑涓�涓粯璁ゅ疄鐜帮紝鐩存帴鍙戦�両oBuffer
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 下午06:04:22
+ * @since 1.0, 2009-12-16 涓嬪崍06:04:22
  */
 public class ByteBufferCodecFactory implements CodecFactory {
     static final IoBuffer EMPTY_BUFFER = IoBuffer.allocate(0);

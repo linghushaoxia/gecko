@@ -25,11 +25,11 @@ import com.taobao.gecko.core.core.CodecFactory;
 /**
  * 
  * 
- * wireĞ­ÒéÀàĞÍ£¬ÈÎºÎÏëÒªÊ¹ÓÃgeckoµÄĞ­Òé¶¼ĞèÒª¼Ì³Ğ´ËÀà²¢ÊµÏÖÏàÓ¦·½·¨
+ * wireåè®®ç±»å‹ï¼Œä»»ä½•æƒ³è¦ä½¿ç”¨geckoçš„åè®®éƒ½éœ€è¦ç»§æ‰¿æ­¤ç±»å¹¶å®ç°ç›¸åº”æ–¹æ³•
  * 
  * @author boyan
  * 
- * @since 1.0, 2010-1-27 ÏÂÎç05:46:27
+ * @since 1.0, 2010-1-27 ä¸‹åˆ05:46:27
  */
 
 public abstract class WireFormatType {
@@ -37,7 +37,7 @@ public abstract class WireFormatType {
 
 
     /**
-     * ×¢²áĞ­ÒéÀàĞÍ
+     * æ³¨å†Œåè®®ç±»å‹
      * 
      * @param wireFormatType
      */
@@ -50,7 +50,7 @@ public abstract class WireFormatType {
 
 
     /**
-     * È¡ÏûĞ­ÒéÀàĞÍµÄ×¢²á
+     * å–æ¶ˆåè®®ç±»å‹çš„æ³¨å†Œ
      * 
      * @param wireFormatType
      */
@@ -75,7 +75,7 @@ public abstract class WireFormatType {
 
 
     /**
-     * Ğ­ÒéµÄscheme
+     * åè®®çš„scheme
      * 
      * @return
      */
@@ -83,7 +83,7 @@ public abstract class WireFormatType {
 
 
     /**
-     * Ğ­ÒéµÄ±à½âÂë¹¤³§
+     * åè®®çš„ç¼–è§£ç å·¥å‚
      * 
      * @return
      */
@@ -91,7 +91,7 @@ public abstract class WireFormatType {
 
 
     /**
-     * Ğ­ÒéµÄÃüÁî¹¤³§
+     * åè®®çš„å‘½ä»¤å·¥å‚
      * 
      * @return
      */
@@ -99,7 +99,7 @@ public abstract class WireFormatType {
 
 
     /**
-     * Ğ­ÒéÃû³Æ
+     * åè®®åç§°
      * 
      * @return
      */

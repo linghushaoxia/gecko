@@ -32,17 +32,17 @@ import com.taobao.gecko.service.exception.NotifyRemotingException;
 
 /**
  * 
- * Á¬½ÓµÄ°ü×°£¬Ìá¹©¸ü¸ß²ã´ÎµÄ³éÏó
+ * è¿æ¥çš„åŒ…è£…ï¼Œæä¾›æ›´é«˜å±‚æ¬¡çš„æŠ½è±¡
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-15 ÏÂÎç02:38:20
+ * @since 1.0, 2009-12-15 ä¸‹åˆ02:38:20
  */
 
 public interface Connection {
 
     /**
-     * »ñÈ¡È«¾ÖÉÏÏÂÎÄ
+     * è·å–å…¨å±€ä¸Šä¸‹æ–‡
      * 
      * @return
      */
@@ -50,17 +50,17 @@ public interface Connection {
 
 
     /**
-     * ¹Ø±ÕÁ¬½Ó
+     * å…³é—­è¿æ¥
      * 
      * @param allowReconnect
-     *            Èç¹ûtrue£¬ÔòÔÊĞí×Ô¶¯ÖØÁ¬
+     *            å¦‚æœtrueï¼Œåˆ™å…è®¸è‡ªåŠ¨é‡è¿
      * @throws NotifyRemotingException
      */
     public void close(boolean allowReconnect) throws NotifyRemotingException;
 
 
     /**
-     * Á¬½ÓÊÇ·ñÓĞĞ§
+     * è¿æ¥æ˜¯å¦æœ‰æ•ˆ
      * 
      * @return
      */
@@ -68,7 +68,7 @@ public interface Connection {
 
 
     /**
-     * Í¬²½µ÷ÓÃ£¬Ö¸¶¨³¬Ê±Ê±¼ä
+     * åŒæ­¥è°ƒç”¨ï¼ŒæŒ‡å®šè¶…æ—¶æ—¶é—´
      * 
      * @param requestCommand
      * @param timeConnection
@@ -82,7 +82,7 @@ public interface Connection {
 
 
     /**
-     * Í¬²½µ÷ÓÃ£¬Ä¬ÈÏ³¬Ê±1Ãë
+     * åŒæ­¥è°ƒç”¨ï¼Œé»˜è®¤è¶…æ—¶1ç§’
      * 
      * @param request
      * @return
@@ -94,7 +94,7 @@ public interface Connection {
 
 
     /**
-     * Òì²½·¢ËÍ£¬Ö¸¶¨»Øµ÷¼àÌıÆ÷£¬Ä¬ÈÏ³¬Ê±1Ãë£¬³¬Ê±½«·µ»ØÒ»¸ö³¬Ê±Ó¦´ğ¸ø»Øµ÷¼àÌıÆ÷
+     * å¼‚æ­¥å‘é€ï¼ŒæŒ‡å®šå›è°ƒç›‘å¬å™¨ï¼Œé»˜è®¤è¶…æ—¶1ç§’ï¼Œè¶…æ—¶å°†è¿”å›ä¸€ä¸ªè¶…æ—¶åº”ç­”ç»™å›è°ƒç›‘å¬å™¨
      * 
      * @param requestCommand
      * @param listener
@@ -104,7 +104,7 @@ public interface Connection {
 
 
     /**
-     * Òì²½·¢ËÍ£¬Ö¸¶¨»Øµ÷¼àÌıÆ÷ºÍ³¬Ê±Ê±¼ä£¬³¬Ê±½«·µ»ØÒ»¸ö³¬Ê±Ó¦´ğ¸ø»Øµ÷¼àÌıÆ÷
+     * å¼‚æ­¥å‘é€ï¼ŒæŒ‡å®šå›è°ƒç›‘å¬å™¨å’Œè¶…æ—¶æ—¶é—´ï¼Œè¶…æ—¶å°†è¿”å›ä¸€ä¸ªè¶…æ—¶åº”ç­”ç»™å›è°ƒç›‘å¬å™¨
      * 
      * @param requestCommand
      * @param listener
@@ -114,7 +114,7 @@ public interface Connection {
 
 
     /**
-     * Òì²½µ¥Ïò·¢ËÍ
+     * å¼‚æ­¥å•å‘å‘é€
      * 
      * @param requestCommand
      */
@@ -122,7 +122,7 @@ public interface Connection {
 
 
     /**
-     * Òì²½·¢ËÍ£¬²¢·µ»Ø¿ÉÈ¡ÏûµÄfuture
+     * å¼‚æ­¥å‘é€ï¼Œå¹¶è¿”å›å¯å–æ¶ˆçš„future
      * 
      * @param requestCommand
      * @return
@@ -132,7 +132,7 @@ public interface Connection {
 
 
     /**
-     * µ¥ÏòÒì²½Ó¦´ğ
+     * å•å‘å¼‚æ­¥åº”ç­”
      * 
      * @param responseCommand
      */
@@ -140,13 +140,13 @@ public interface Connection {
 
 
     /**
-     * Çå³ıÁ¬½ÓµÄËùÓĞÊôĞÔ
+     * æ¸…é™¤è¿æ¥çš„æ‰€æœ‰å±æ€§
      */
     public void clearAttributes();
 
 
     /**
-     * »ñÈ¡Á¬½ÓÉÏµÄÄ³¸öÊôĞÔ
+     * è·å–è¿æ¥ä¸Šçš„æŸä¸ªå±æ€§
      * 
      * @param key
      * @return
@@ -155,7 +155,7 @@ public interface Connection {
 
 
     /**
-     * »ñÈ¡Ô¶¶ËµØÖ·
+     * è·å–è¿œç«¯åœ°å€
      * 
      * @return
      */
@@ -163,7 +163,7 @@ public interface Connection {
 
 
     /**
-     * »ñÈ¡±¾¶ËIPµØÖ·
+     * è·å–æœ¬ç«¯IPåœ°å€
      * 
      * @return
      */
@@ -171,7 +171,7 @@ public interface Connection {
 
 
     /**
-     * ÒÆ³ıÊôĞÔ
+     * ç§»é™¤å±æ€§
      * 
      * @param key
      */
@@ -179,7 +179,7 @@ public interface Connection {
 
 
     /**
-     * ÉèÖÃÊôĞÔ
+     * è®¾ç½®å±æ€§
      * 
      * @param key
      * @param value
@@ -188,7 +188,7 @@ public interface Connection {
 
 
     /**
-     * ·µ»ØÊôĞÔµÄkey¼¯ºÏ
+     * è¿”å›å±æ€§çš„keyé›†åˆ
      * 
      * @since 1.8.3
      * @return
@@ -197,7 +197,7 @@ public interface Connection {
 
 
     /**
-     * ÉèÖÃÁ¬½ÓµÄ¶Á»º³åÇøµÄ×Ö½ÚĞò
+     * è®¾ç½®è¿æ¥çš„è¯»ç¼“å†²åŒºçš„å­—èŠ‚åº
      * 
      * @param byteOrder
      */
@@ -205,7 +205,7 @@ public interface Connection {
 
 
     /**
-     * »ñÈ¡Á¬½ÓµÄ¶Á»º³åÇøµÄ×Ö½ÚĞò
+     * è·å–è¿æ¥çš„è¯»ç¼“å†²åŒºçš„å­—èŠ‚åº
      * 
      * @param byteOrder
      * @return TODO
@@ -214,7 +214,7 @@ public interface Connection {
 
 
     /**
-     * ÉèÖÃÊôĞÔ£¬ÀàËÆConcurrentHashMap.putIfAbsent·½·¨
+     * è®¾ç½®å±æ€§ï¼Œç±»ä¼¼ConcurrentHashMap.putIfAbsentæ–¹æ³•
      * 
      * @param key
      * @param value
@@ -224,7 +224,7 @@ public interface Connection {
 
 
     /**
-     * ·µ»Ø¸ÃÁ¬½ÓËùÔÚµÄ·Ö×é¼¯ºÏ
+     * è¿”å›è¯¥è¿æ¥æ‰€åœ¨çš„åˆ†ç»„é›†åˆ
      * 
      * @return
      */
@@ -232,17 +232,17 @@ public interface Connection {
 
 
     /**
-     * ÊÇ·ñÆôÓÃ¿ÉÖĞ¶ÏĞ´Èë²Ù×÷£¬Èç¹ûÆôÓÃ£¬ÔòÔÊĞíÔÚÓÃ»§Ïß³ÌĞ´Èësocket
-     * bufferÌá¸ßÊı¾İµÄ·¢ËÍĞ§ÂÊ£¬µ«ÊÇÓÃ»§Ïß³ÌµÄÖĞ¶Ï¿ÉÄÜÒıÆğÁ¬½Ó¶Ï¿ª£¬ĞèÉ÷ÖØÊ¹ÓÃ¡£Ä¬ÈÏ²»ÆôÓÃ¡£
+     * æ˜¯å¦å¯ç”¨å¯ä¸­æ–­å†™å…¥æ“ä½œï¼Œå¦‚æœå¯ç”¨ï¼Œåˆ™å…è®¸åœ¨ç”¨æˆ·çº¿ç¨‹å†™å…¥socket
+     * bufferæé«˜æ•°æ®çš„å‘é€æ•ˆç‡ï¼Œä½†æ˜¯ç”¨æˆ·çº¿ç¨‹çš„ä¸­æ–­å¯èƒ½å¼•èµ·è¿æ¥æ–­å¼€ï¼Œéœ€æ…é‡ä½¿ç”¨ã€‚é»˜è®¤ä¸å¯ç”¨ã€‚
      * 
      * @param writeInterruptibly
-     *            true¡ª¡ªÆôÓÃ false¡ª¡ª²»ÆôÓÃ
+     *            trueâ€”â€”å¯ç”¨ falseâ€”â€”ä¸å¯ç”¨
      */
     public void setWriteInterruptibly(boolean writeInterruptibly);
 
 
     /**
-     * µ¥Ïò´«Êä£¬ÎŞ³¬Ê±
+     * å•å‘ä¼ è¾“ï¼Œæ— è¶…æ—¶
      * 
      * @see #transferFrom(IoBuffer, IoBuffer, FileChannel, long, long, Integer,
      *      SingleRequestCallBackListener, long, TimeUnit)
@@ -257,10 +257,10 @@ public interface Connection {
 
 
     /**
-     * ´ÓÖ¸¶¨FileChannelµÄpositionÎ»ÖÃ¿ªÊ¼´«Êäsize¸ö×Ö½Úµ½socket,
-     * remoting»á¸ºÔğ±£Ö¤½«Ö¸¶¨´óĞ¡µÄÊı¾İ´«Êä¸øsocket¡£Èç¹ûfile channelÀïµÄÊı¾İ²»×ãsize´óĞ¡£¬ÔòÒÔÊµ¼Ê´óĞ¡´«Êä¡£
-     * ¡£ÆäÖĞheadºÍtailÊÇÖ¸ÔÚ´«ÊäÎÄ¼şÖ®Ç°»òÕßÖ®ºóĞèÒªĞ´ÈëµÄÊı¾İ£¬¿ÉÒÔÎªnull£¬ËûÃÇºÍÎÄ¼şÊı¾İ×÷ÎªÒ»¸öÕûÌåÀ´·¢ËÍ¡£
-     * ³¬¹ıÖ¸¶¨µÄ³¬Ê±Ê±¼äÔòÈ¡Ïû´«Êä(Èç¹û»¹Ã»ÓĞ¿ªÊ¼´«ÊäµÄ»°,ÒÑ¾­¿ªÊ¼µÄÎŞ·¨ÖĞÖ¹)£¬²¢Í¨Öªlistener¡£
+     * ä»æŒ‡å®šFileChannelçš„positionä½ç½®å¼€å§‹ä¼ è¾“sizeä¸ªå­—èŠ‚åˆ°socket,
+     * remotingä¼šè´Ÿè´£ä¿è¯å°†æŒ‡å®šå¤§å°çš„æ•°æ®ä¼ è¾“ç»™socketã€‚å¦‚æœfile channelé‡Œçš„æ•°æ®ä¸è¶³sizeå¤§å°ï¼Œåˆ™ä»¥å®é™…å¤§å°ä¼ è¾“ã€‚
+     * ã€‚å…¶ä¸­headå’Œtailæ˜¯æŒ‡åœ¨ä¼ è¾“æ–‡ä»¶ä¹‹å‰æˆ–è€…ä¹‹åéœ€è¦å†™å…¥çš„æ•°æ®ï¼Œå¯ä»¥ä¸ºnullï¼Œä»–ä»¬å’Œæ–‡ä»¶æ•°æ®ä½œä¸ºä¸€ä¸ªæ•´ä½“æ¥å‘é€ã€‚
+     * è¶…è¿‡æŒ‡å®šçš„è¶…æ—¶æ—¶é—´åˆ™å–æ¶ˆä¼ è¾“(å¦‚æœè¿˜æ²¡æœ‰å¼€å§‹ä¼ è¾“çš„è¯,å·²ç»å¼€å§‹çš„æ— æ³•ä¸­æ­¢)ï¼Œå¹¶é€šçŸ¥listenerã€‚
      * 
      * @param head
      * @param tail

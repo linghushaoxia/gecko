@@ -48,13 +48,13 @@ import com.taobao.gecko.core.util.LinkedTransferQueue;
 
 
 /**
- * Controller抽象基类
+ * Controller鎶借薄鍩虹被
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 下午06:03:07
+ * @since 1.0, 2009-12-16 涓嬪崍06:03:07
  */
 public abstract class AbstractController implements Controller, ControllerLifeCycle {
 

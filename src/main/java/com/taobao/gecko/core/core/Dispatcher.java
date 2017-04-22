@@ -16,13 +16,13 @@
 package com.taobao.gecko.core.core;
 
 /**
- * ÈÎÎñÅÉ·¢Æ÷
+ * ä»»åŠ¡æ´¾å‘å™¨
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:00:01
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:00:01
  */
 public interface Dispatcher {
     public void dispatch(Runnable r);

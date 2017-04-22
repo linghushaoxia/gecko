@@ -19,11 +19,11 @@ import com.taobao.gecko.core.core.CodecFactory;
 
 
 /**
- * NotifyĞ­Òé±à½âÂë¹¤³§
+ * Notifyåè®®ç¼–è§£ç å·¥å‚
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç05:52:28
+ * @since 1.0, 2009-12-16 ä¸‹åˆ05:52:28
  */
 public class NotifyProtocolCodecFactory implements CodecFactory {
     private final Encoder encoder;

@@ -37,13 +37,13 @@ import com.taobao.gecko.core.statistics.impl.DefaultStatistics;
 
 
 /**
- * Nio UDPÁ¬½Ó
+ * Nio UDPè¿æ¥
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:10:25
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:10:25
  */
 public class NioUDPSession extends AbstractNioSession implements UDPSession {
 
@@ -82,7 +82,7 @@ public class NioUDPSession extends AbstractNioSession implements UDPSession {
         if (packaet instanceof DatagramPacket) {
             if (this.isClosed()) {
                 final FutureImpl<Boolean> future = new FutureImpl<Boolean>();
-                future.failure(new IOException("Á¬½ÓÒÑ¾­±»¹Ø±Õ"));
+                future.failure(new IOException("è¿æ¥å·²ç»è¢«å…³é—­"));
                 return future;
             }
             final FutureImpl<Boolean> future = new FutureImpl<Boolean>();
@@ -137,7 +137,7 @@ public class NioUDPSession extends AbstractNioSession implements UDPSession {
     public Future<Boolean> asyncWrite(final SocketAddress targetAddr, final Object msg) {
         if (this.isClosed()) {
             final FutureImpl<Boolean> future = new FutureImpl<Boolean>();
-            future.failure(new IOException("Á¬½ÓÒÑ¾­±»¹Ø±Õ"));
+            future.failure(new IOException("è¿æ¥å·²ç»è¢«å…³é—­"));
             return future;
         }
         final FutureImpl<Boolean> future = new FutureImpl<Boolean>();
@@ -237,13 +237,13 @@ public class NioUDPSession extends AbstractNioSession implements UDPSession {
     }
 
     /**
-     * UDPÏûÏ¢·â×°£¬Ôö¼ÓÁËÒ»¸ö·¢ËÍµØÖ·
+     * UDPæ¶ˆæ¯å°è£…ï¼Œå¢åŠ äº†ä¸€ä¸ªå‘é€åœ°å€
      * 
      * 
      * 
      * @author boyan
      * 
-     * @since 1.0, 2009-12-16 ÏÂÎç06:10:42
+     * @since 1.0, 2009-12-16 ä¸‹åˆ06:10:42
      */
     class UDPWriteMessage extends ByteBufferWriteMessage {
 

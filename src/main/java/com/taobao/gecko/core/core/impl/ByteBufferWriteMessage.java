@@ -23,13 +23,13 @@ import com.taobao.gecko.core.core.WriteMessage;
 
 
 /**
- * ·¢ËÍÏûÏ¢°ü×°ÊµÏÖ
+ * å‘é€æ¶ˆæ¯åŒ…è£…å®ç°
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:06:01
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:06:01
  */
 public class ByteBufferWriteMessage implements WriteMessage {
 

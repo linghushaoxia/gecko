@@ -23,27 +23,27 @@ import com.taobao.gecko.core.command.RequestCommand;
 /**
  * 
  * 
- * ÇëÇó´¦ÀíÆ÷
+ * è¯·æ±‚å¤„ç†å™¨
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-15 ÏÂÎç02:45:43
+ * @since 1.0, 2009-12-15 ä¸‹åˆ02:45:43
  */
 
 public interface RequestProcessor<T extends RequestCommand> {
     /**
-     * ´¦ÀíÇëÇó
+     * å¤„ç†è¯·æ±‚
      * 
      * @param request
-     *            ÇëÇóÃüÁî
+     *            è¯·æ±‚å‘½ä»¤
      * @param conn
-     *            ÇëÇóÀ´Ô´µÄÁ¬½Ó
+     *            è¯·æ±‚æ¥æºçš„è¿æ¥
      */
     public void handleRequest(T request, Connection conn);
 
 
     /**
-     * ÓÃ»§×Ô¶¨ÒåµÄÏß³Ì³Ø£¬Èç¹ûÌá¹©£¬ÄÇÃ´ÇëÇóµÄ´¦Àí¶¼½«ÔÚ¸ÃÏß³Ì³ØÄÚÖ´ĞĞ
+     * ç”¨æˆ·è‡ªå®šä¹‰çš„çº¿ç¨‹æ± ï¼Œå¦‚æœæä¾›ï¼Œé‚£ä¹ˆè¯·æ±‚çš„å¤„ç†éƒ½å°†åœ¨è¯¥çº¿ç¨‹æ± å†…æ‰§è¡Œ
      * 
      * @return
      */

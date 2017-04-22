@@ -36,13 +36,13 @@ import java.util.Properties;
 
 
 /**
- * ×ÊÔ´ÎÄ¼ş¹¤¾ßÀà
+ * èµ„æºæ–‡ä»¶å·¥å…·ç±»
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:22:09
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:22:09
  */
 public class ResourcesUtils extends Object {
 

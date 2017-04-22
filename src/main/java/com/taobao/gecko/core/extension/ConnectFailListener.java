@@ -18,7 +18,7 @@ package com.taobao.gecko.core.extension;
 
 
 /**
- * 扩展监听器，监听连接失败事件
+ * 鎵╁睍鐩戝惉鍣紝鐩戝惉杩炴帴澶辫触浜嬩欢
  * 
  * @author dennis
  * 

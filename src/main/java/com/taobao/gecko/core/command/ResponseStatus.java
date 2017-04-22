@@ -16,23 +16,23 @@
 package com.taobao.gecko.core.command;
 
 /**
- * Ó¦´ğ×´Ì¬
+ * åº”ç­”çŠ¶æ€
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç05:55:23
+ * @since 1.0, 2009-12-16 ä¸‹åˆ05:55:23
  */
 public enum ResponseStatus {
-    NO_ERROR(null), // Õı³£³É¹¦
-    ERROR("Error by user"), // ´íÎó£¬ÏìÓ¦¶ËÖ÷¶¯ÉèÖÃ
-    EXCEPTION("Exception occured"), // Òì³£
-    UNKNOWN("Unknow error"), // Ã»ÓĞ×¢²áListener£¬°üÀ¨CheckMessageListenerºÍMessageListener
-    THREADPOOL_BUSY("Thread pool is busy"), // ÏìÓ¦¶ÎÏß³Ì·±Ã¦
-    ERROR_COMM("Communication error"), // Í¨Ñ¶´íÎó£¬Èç±àÂë´íÎó
-    NO_PROCESSOR("There is no processor to handle this request"), // Ã»ÓĞ¸ÃÇëÇóÃüÁîµÄ´¦ÀíÆ÷
-    TIMEOUT("Operation timeout"); // ÏìÓ¦³¬Ê±
+    NO_ERROR(null), // æ­£å¸¸æˆåŠŸ
+    ERROR("Error by user"), // é”™è¯¯ï¼Œå“åº”ç«¯ä¸»åŠ¨è®¾ç½®
+    EXCEPTION("Exception occured"), // å¼‚å¸¸
+    UNKNOWN("Unknow error"), // æ²¡æœ‰æ³¨å†ŒListenerï¼ŒåŒ…æ‹¬CheckMessageListenerå’ŒMessageListener
+    THREADPOOL_BUSY("Thread pool is busy"), // å“åº”æ®µçº¿ç¨‹ç¹å¿™
+    ERROR_COMM("Communication error"), // é€šè®¯é”™è¯¯ï¼Œå¦‚ç¼–ç é”™è¯¯
+    NO_PROCESSOR("There is no processor to handle this request"), // æ²¡æœ‰è¯¥è¯·æ±‚å‘½ä»¤çš„å¤„ç†å™¨
+    TIMEOUT("Operation timeout"); // å“åº”è¶…æ—¶
 
     private String errorMessage;
 

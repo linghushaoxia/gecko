@@ -37,7 +37,7 @@ import com.taobao.gecko.core.nio.TCPController;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-24 œ¬ŒÁ03:09:42
+ * @since 1.0, 2009-12-24 ‰∏ãÂçà03:09:42
  */
 
 public class SelectorManagerUnitTest {
@@ -137,7 +137,7 @@ public class SelectorManagerUnitTest {
         IMocksControl control = EasyMock.createControl();
         NioSession session = control.createMock(NioSession.class);
         EasyMock.makeThreadSafe(session, true);
-        // next reactorµƒindex=2
+        // next reactorÁöÑindex=2
         Reactor nextReactor = this.selectorManager.getReactorByIndex(2);
         session.onEvent(EventType.ENABLE_READ, nextReactor.getSelector());
         EasyMock.expectLastCall();

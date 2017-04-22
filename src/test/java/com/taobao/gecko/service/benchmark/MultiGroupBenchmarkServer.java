@@ -63,7 +63,7 @@ public class MultiGroupBenchmarkServer {
 
         public void onConnectionCreated(final Connection conn) {
             final String group = GROUP_PREFIX + this.count.incrementAndGet();
-            System.out.println("¼ÓÈë·Ö×é" + group);
+            System.out.println("åŠ å…¥åˆ†ç»„" + group);
             conn.getRemotingContext().addConnectionToGroup(group, conn);
 
         }
@@ -107,7 +107,7 @@ public class MultiGroupBenchmarkServer {
                                     final Object... args) {
                                 AccessThread.this.countDownLatch.countDown();
                                 if (groupResponses.size() != groupCount) {
-                                    throw new RuntimeException("Ó¦´ğÊıÄ¿²»Æ¥Åä");
+                                    throw new RuntimeException("åº”ç­”æ•°ç›®ä¸åŒ¹é…");
                                 }
                                 for (final Map.Entry<String, ResponseCommand> entry : groupResponses.entrySet()) {
                                     final ResponseCommand response = entry.getValue();
@@ -116,7 +116,7 @@ public class MultiGroupBenchmarkServer {
                                     }
                                     // if (response.getResponseStatus() !=
                                     // ResponseStatus.NO_ERROR) {
-                                    // System.out.println("ÏìÓ¦´íÎó" +
+                                    // System.out.println("å“åº”é”™è¯¯" +
                                     // response.getResponseStatus());
                                     // }
                                 }
@@ -197,9 +197,9 @@ public class MultiGroupBenchmarkServer {
         final long throughtoutput = REPEAT * THREAD_COUNT * 1000L / duration;
         final int groupCount = server.getRemotingContext().getGroupSet().size() - 1;
         System.out.println(String.format(
-            "²¢·¢:%d£¬Ñ­»·´ÎÊı:%d,ÏûÏ¢´óĞ¡:%d£¬·Ö×éÊı%d£¬ºÄÊ±:%d ms,Throughtoutput:%d,send Error:%d,timeoutError:%d", THREAD_COUNT,
+            "å¹¶å‘:%dï¼Œå¾ªç¯æ¬¡æ•°:%d,æ¶ˆæ¯å¤§å°:%dï¼Œåˆ†ç»„æ•°%dï¼Œè€—æ—¶:%d ms,Throughtoutput:%d,send Error:%d,timeoutError:%d", THREAD_COUNT,
             REPEAT, BODY_LEN, groupCount, duration, throughtoutput, sendErrorCounter.get(), timeoutCounter.get()));
-        System.out.println("²âÊÔ½áÊø...");
+        System.out.println("æµ‹è¯•ç»“æŸ...");
 
         // server.stop();
         // client.stop();

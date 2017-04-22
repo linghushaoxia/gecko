@@ -19,13 +19,13 @@ import com.taobao.gecko.core.statistics.Statistics;
 
 
 /**
- * Ä¬ÈÏÍ³¼ÆÀà
+ * é»˜è®¤ç»Ÿè®¡ç±»
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:18:55
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:18:55
  */
 public class DefaultStatistics implements Statistics {
     public void start() {

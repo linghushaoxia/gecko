@@ -35,7 +35,7 @@ import com.taobao.gecko.core.core.impl.UDPHandlerAdapter;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-25 ÏÂÎç01:46:11
+ * @since 1.0, 2009-12-25 ä¸‹åˆ01:46:11
  */
 
 public class UDPConnectorControllerUnitTest {

@@ -18,11 +18,11 @@ package com.taobao.gecko.service.exception;
 /**
  * 
  * 
- * Notify remotingµÄcheckÒì³££¬Ç¿ÖÆÒªÇó²¶×½
+ * Notify remotingçš„checkå¼‚å¸¸ï¼Œå¼ºåˆ¶è¦æ±‚æ•æ‰
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-18 ÏÂÎç02:07:48
+ * @since 1.0, 2009-12-18 ä¸‹åˆ02:07:48
  */
 
 public class NotifyRemotingException extends Exception {

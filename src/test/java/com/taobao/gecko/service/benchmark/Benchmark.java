@@ -37,11 +37,11 @@ import com.taobao.gecko.service.notify.response.NotifyDummyAckCommand;
 
 /**
  * 
- * Service²ãµÄÒ»¸öĞÔÄÜ²âÊÔ
+ * Serviceå±‚çš„ä¸€ä¸ªæ€§èƒ½æµ‹è¯•
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-24 ÏÂÎç06:26:00
+ * @since 1.0, 2009-12-24 ä¸‹åˆ06:26:00
  */
 
 public class Benchmark {
@@ -113,7 +113,7 @@ public class Benchmark {
                                 this.client.invokeToGroup(this.group, new NotifyDummyRequestCommand(body), TIMEOUT,
                                     TimeUnit.MILLISECONDS);
                         if (response == null || response.getResponseStatus() != ResponseStatus.NO_ERROR) {
-                            throw new IllegalStateException("µ÷ÓÃ½á¹û·Ç·¨" + response);
+                            throw new IllegalStateException("è°ƒç”¨ç»“æœéæ³•" + response);
                         }
                     }
                     catch (final TimeoutException e) {
@@ -163,8 +163,8 @@ public class Benchmark {
         final String group = server.getConnectURI().toString();
         client.connect(group, CONN_COUNT);
         client.awaitReadyInterrupt(group);
-        System.out.println("Á¬½ÓÊı:" + client.getConnectionCount(group));
-        System.out.println("¿ªÊ¼²âÊÔ...");
+        System.out.println("è¿æ¥æ•°:" + client.getConnectionCount(group));
+        System.out.println("å¼€å§‹æµ‹è¯•...");
 
         final CyclicBarrier barrier = new CyclicBarrier(THREAD_COUNT + 1);
         for (int i = 0; i < THREAD_COUNT; i++) {
@@ -175,9 +175,9 @@ public class Benchmark {
         barrier.await();
         final long duration = System.currentTimeMillis() - start;
         final long throughtoutput = REPEAT * THREAD_COUNT * 1000L / duration;
-        System.out.println(String.format("²¢·¢:%d£¬Ñ­»·´ÎÊı:%d,ÏûÏ¢´óĞ¡:%d£¬¿Í»§¶ËÁ¬½ÓÊı%d£¬ºÄÊ±:%d ms,Throughtoutput:%d", THREAD_COUNT,
+        System.out.println(String.format("å¹¶å‘:%dï¼Œå¾ªç¯æ¬¡æ•°:%d,æ¶ˆæ¯å¤§å°:%dï¼Œå®¢æˆ·ç«¯è¿æ¥æ•°%dï¼Œè€—æ—¶:%d ms,Throughtoutput:%d", THREAD_COUNT,
             REPEAT, BODY_LEN, CONN_COUNT, duration, throughtoutput));
-        System.out.println("²âÊÔ½áÊø...");
+        System.out.println("æµ‹è¯•ç»“æŸ...");
 
         server.stop();
         client.stop();

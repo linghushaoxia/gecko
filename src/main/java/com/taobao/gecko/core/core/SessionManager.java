@@ -16,13 +16,13 @@
 package com.taobao.gecko.core.core;
 
 /**
- * Á¬½Ó¹ÜÀíÆ÷
+ * è¿æ¥ç®¡ç†å™¨
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:01:50
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:01:50
  */
 public interface SessionManager {
     public void registerSession(Session session);

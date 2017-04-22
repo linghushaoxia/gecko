@@ -48,7 +48,7 @@ public abstract class NioController extends AbstractController implements Select
     protected SelectorManager selectorManager;
 
     /**
-     * Ä¬ÈÏselectorPoolSize
+     * é»˜è®¤selectorPoolSize
      */
     protected int selectorPoolSize = SystemUtils.getSystemThreadCount();
 
@@ -63,7 +63,7 @@ public abstract class NioController extends AbstractController implements Select
 
 
     /**
-     * ÉèÖÃSelector³Ø´óĞ¡
+     * è®¾ç½®Selectoræ± å¤§å°
      * 
      * @param selectorPoolSize
      */
@@ -95,13 +95,13 @@ public abstract class NioController extends AbstractController implements Select
     }
 
     /**
-     * WriteÈÎÎñ
+     * Writeä»»åŠ¡
      * 
      * 
      * 
      * @author boyan
      * 
-     * @since 1.0, 2009-12-24 ÏÂÎç01:04:26
+     * @since 1.0, 2009-12-24 ä¸‹åˆ01:04:26
      */
     private final class WriteTask implements Runnable {
         private final SelectionKey key;
@@ -118,13 +118,13 @@ public abstract class NioController extends AbstractController implements Select
     }
 
     /**
-     * ReadÈÎÎñ
+     * Readä»»åŠ¡
      * 
      * 
      * 
      * @author boyan
      * 
-     * @since 1.0, 2009-12-24 ÏÂÎç01:04:19
+     * @since 1.0, 2009-12-24 ä¸‹åˆ01:04:19
      */
     private final class ReadTask implements Runnable {
         private final SelectionKey key;
@@ -142,7 +142,7 @@ public abstract class NioController extends AbstractController implements Select
 
 
     /**
-     * »ñÈ¡SelectorManager
+     * è·å–SelectorManager
      * 
      * @return
      */
@@ -173,7 +173,7 @@ public abstract class NioController extends AbstractController implements Select
 
 
     /**
-     * ³õÊ¼»¯SelectorManager
+     * åˆå§‹åŒ–SelectorManager
      * 
      * @throws IOException
      */
@@ -194,7 +194,7 @@ public abstract class NioController extends AbstractController implements Select
 
 
     /**
-     * READBLEÊÂ¼şÅÉ·¢
+     * READBLEäº‹ä»¶æ´¾å‘
      */
     public void onRead(final SelectionKey key) {
         if (this.readEventDispatcher == null) {
@@ -207,7 +207,7 @@ public abstract class NioController extends AbstractController implements Select
 
 
     /**
-     * ´¦Àí³¬Ê±ÊÂ¼ş
+     * å¤„ç†è¶…æ—¶äº‹ä»¶
      * 
      * @param timerRef
      */
@@ -224,7 +224,7 @@ public abstract class NioController extends AbstractController implements Select
 
 
     /**
-     * WRITEABLEÊÂ¼şÅÉ·¢
+     * WRITEABLEäº‹ä»¶æ´¾å‘
      */
     public void onWrite(final SelectionKey key) {
         if (this.writeEventDispatcher == null) {
@@ -237,7 +237,7 @@ public abstract class NioController extends AbstractController implements Select
 
 
     /**
-     * ¹Ø±Õkey¶ÔÓ¦µÄChannel
+     * å…³é—­keyå¯¹åº”çš„Channel
      */
     public void closeSelectionKey(final SelectionKey key) {
         if (key.attachment() instanceof Session) {

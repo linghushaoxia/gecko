@@ -27,7 +27,7 @@
 package com.taobao.gecko.core.config;
 
 /**
- * Yanf4j ÅäÖÃ¶ÔÏó
+ * Yanf4j é…ç½®å¯¹è±¡
  * 
  * @author dennis
  * 

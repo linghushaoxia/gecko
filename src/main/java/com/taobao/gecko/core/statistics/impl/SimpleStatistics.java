@@ -21,13 +21,13 @@ import com.taobao.gecko.core.statistics.Statistics;
 
 
 /**
- * 简单统计类
+ * 绠�鍗曠粺璁＄被
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 下午06:19:09
+ * @since 1.0, 2009-12-16 涓嬪崍06:19:09
  */
 public class SimpleStatistics implements Statistics {
     private boolean started = false;

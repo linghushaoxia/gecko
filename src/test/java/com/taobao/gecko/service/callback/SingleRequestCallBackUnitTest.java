@@ -32,7 +32,7 @@ import com.taobao.gecko.service.notify.response.NotifyDummyAckCommand;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-21 下午05:23:04
+ * @since 1.0, 2009-12-21 涓嬪崍05:23:04
  */
 
 public class SingleRequestCallBackUnitTest {
@@ -70,7 +70,7 @@ public class SingleRequestCallBackUnitTest {
             Assert.fail();
         }
         catch (final NotifyRemotingException e) {
-            Assert.assertEquals("同步调用失败", e.getMessage());
+            Assert.assertEquals("鍚屾璋冪敤澶辫触", e.getMessage());
             Assert.assertEquals("test", e.getCause().getMessage());
         }
     }

@@ -25,26 +25,26 @@ import com.taobao.gecko.service.exception.NotifyRemotingException;
 
 /**
  * 
- * Notify RemotingµÄ¿Í»§¶Ë½Ó¿Ú
+ * Notify Remotingçš„å®¢æˆ·ç«¯æ¥å£
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç02:04:38
+ * @since 1.0, 2009-12-16 ä¸‹åˆ02:04:38
  */
 
 public interface RemotingClient extends RemotingController {
     /**
-     * ¸ù¾İURLÁ¬½Ó·şÎñ¶Ë£¬Èç¹ûÁ¬½ÓÊ§°Ü½«×ªÈëÖØÁ¬Ä£Ê½
+     * æ ¹æ®URLè¿æ¥æœåŠ¡ç«¯ï¼Œå¦‚æœè¿æ¥å¤±è´¥å°†è½¬å…¥é‡è¿æ¨¡å¼
      * 
      * @param group
-     *            ·şÎñ¶ËµÄURL£¬ĞÎÈçschema://host:portµÄ×Ö·û´®
+     *            æœåŠ¡ç«¯çš„URLï¼Œå½¢å¦‚schema://host:portçš„å­—ç¬¦ä¸²
      * @throws IOException
      */
     public void connect(String url) throws NotifyRemotingException;
 
 
     /**
-     * µÈ´ıÁ¬½Ó¾ÍĞ÷£¬¿ÉÖĞ¶Ï£¬Á¬½Ó¾ÍĞ÷µÄº¬ÒåÈçÏÂ£ºÊÇÖ¸Ö¸¶¨·Ö×éµÄÓĞĞ§Á¬½ÓÊı´ïµ½Éè¶¨Öµ£¬²¢ÇÒ¿ÉÓÃ¡£Ä¬ÈÏµÈ´ı³¬Ê±ÎªÁ¬½ÓÊı³ËÒÔÁ¬½Ó³¬Ê±
+     * ç­‰å¾…è¿æ¥å°±ç»ªï¼Œå¯ä¸­æ–­ï¼Œè¿æ¥å°±ç»ªçš„å«ä¹‰å¦‚ä¸‹ï¼šæ˜¯æŒ‡æŒ‡å®šåˆ†ç»„çš„æœ‰æ•ˆè¿æ¥æ•°è¾¾åˆ°è®¾å®šå€¼ï¼Œå¹¶ä¸”å¯ç”¨ã€‚é»˜è®¤ç­‰å¾…è¶…æ—¶ä¸ºè¿æ¥æ•°ä¹˜ä»¥è¿æ¥è¶…æ—¶
      * 
      * @param group
      * @throws NotifyRemotingException
@@ -54,7 +54,7 @@ public interface RemotingClient extends RemotingController {
 
 
     /**
-     * µÈ´ıÁ¬½Ó¾ÍĞ÷£¬¿ÉÖĞ¶Ï£¬Á¬½Ó¾ÍĞ÷µÄº¬ÒåÈçÏÂ£ºÊÇÖ¸Ö¸¶¨·Ö×éµÄÓĞĞ§Á¬½ÓÊı´ïµ½Éè¶¨Öµ£¬²¢ÇÒ¿ÉÓÃ¡£Ä¬ÈÏµÈ´ı³¬Ê±ÎªÁ¬½ÓÊı³ËÒÔÁ¬½Ó³¬Ê±
+     * ç­‰å¾…è¿æ¥å°±ç»ªï¼Œå¯ä¸­æ–­ï¼Œè¿æ¥å°±ç»ªçš„å«ä¹‰å¦‚ä¸‹ï¼šæ˜¯æŒ‡æŒ‡å®šåˆ†ç»„çš„æœ‰æ•ˆè¿æ¥æ•°è¾¾åˆ°è®¾å®šå€¼ï¼Œå¹¶ä¸”å¯ç”¨ã€‚é»˜è®¤ç­‰å¾…è¶…æ—¶ä¸ºè¿æ¥æ•°ä¹˜ä»¥è¿æ¥è¶…æ—¶
      * 
      * @param group
      * @throws NotifyRemotingException
@@ -83,31 +83,31 @@ public interface RemotingClient extends RemotingController {
 
 
     /**
-     * ¸ù¾İURLÁ¬½Ó·şÎñ¶Ë£¬Èç¹ûÁ¬½ÓÊ§°Ü½«×ªÈëÖØÁ¬Ä£Ê½
+     * æ ¹æ®URLè¿æ¥æœåŠ¡ç«¯ï¼Œå¦‚æœè¿æ¥å¤±è´¥å°†è½¬å…¥é‡è¿æ¨¡å¼
      * 
      * @param url
-     *            ·şÎñ¶ËµÄURL£¬ĞÎÈçschema://host:portµÄ×Ö·û´®
+     *            æœåŠ¡ç«¯çš„URLï¼Œå½¢å¦‚schema://host:portçš„å­—ç¬¦ä¸²
      * @throws IOException
      */
     public void connect(String url, int connCount) throws NotifyRemotingException;
 
 
     /**
-     * ¸ù¾İURLÁ¬½Ó·şÎñ¶Ë£¬Èç¹ûÁ¬½ÓÊ§°Ü½«×ªÈëÖØÁ¬Ä£Ê½£¬µ«ÊÇÁ¬½Ó¼ÓÈëµÄ·Ö×é½«Îªtarget group¡£
+     * æ ¹æ®URLè¿æ¥æœåŠ¡ç«¯ï¼Œå¦‚æœè¿æ¥å¤±è´¥å°†è½¬å…¥é‡è¿æ¨¡å¼ï¼Œä½†æ˜¯è¿æ¥åŠ å…¥çš„åˆ†ç»„å°†ä¸ºtarget groupã€‚
      * 
      * @param url
-     *            ·şÎñ¶ËµÄURL£¬ĞÎÈçschema://host:portµÄ×Ö·û´®
+     *            æœåŠ¡ç«¯çš„URLï¼Œå½¢å¦‚schema://host:portçš„å­—ç¬¦ä¸²
      * @param targetGroup
-     *            Á¬½Ó³É¹¦ºó¼ÓÈëµÄ·Ö×é
+     *            è¿æ¥æˆåŠŸååŠ å…¥çš„åˆ†ç»„
      * @param connCount
-     *            Á¬½ÓÊı
+     *            è¿æ¥æ•°
      * @throws IOException
      */
     public void connect(String url, String targetGroup, int connCount) throws NotifyRemotingException;
 
 
     /**
-     * ¸ù¾İURLÁ¬½Ó·şÎñ¶Ë£¬Èç¹ûÁ¬½ÓÊ§°Ü½«×ªÈëÖØÁ¬Ä£Ê½£¬µ«ÊÇÁ¬½Ó¼ÓÈëµÄ·Ö×é½«Îªtarget group,Á¬½ÓÊıÄ¬ÈÏÎª1
+     * æ ¹æ®URLè¿æ¥æœåŠ¡ç«¯ï¼Œå¦‚æœè¿æ¥å¤±è´¥å°†è½¬å…¥é‡è¿æ¨¡å¼ï¼Œä½†æ˜¯è¿æ¥åŠ å…¥çš„åˆ†ç»„å°†ä¸ºtarget group,è¿æ¥æ•°é»˜è®¤ä¸º1
      * 
      * @param url
      * @param targetGroup
@@ -117,42 +117,42 @@ public interface RemotingClient extends RemotingController {
 
 
     /**
-     * »ñÈ¡Ô¶¶ËµØÖ·
+     * è·å–è¿œç«¯åœ°å€
      * 
      * @param url
-     *            ·şÎñ¶ËµÄurl£¬ĞÎÈçschema://host:portµÄ×Ö·û´®
+     *            æœåŠ¡ç«¯çš„urlï¼Œå½¢å¦‚schema://host:portçš„å­—ç¬¦ä¸²
      * @return
      */
     public InetSocketAddress getRemoteAddress(String url);
 
 
     /**
-     * »ñÈ¡Ô¶¶ËµØÖ·
+     * è·å–è¿œç«¯åœ°å€
      * 
      * @param url
-     *            ·şÎñ¶ËµÄgroup£¬ĞÎÈçschema://host:portµÄ×Ö·û´®
+     *            æœåŠ¡ç«¯çš„groupï¼Œå½¢å¦‚schema://host:portçš„å­—ç¬¦ä¸²
      * @return
      */
     public String getRemoteAddressString(String url);
 
 
     /**
-     * ÅĞ¶Ïurl¶ÔÓ¦µÄÁ¬½ÓÊÇ·ñ¿ÉÓÃ£¬×¢Òâ£¬Èç¹ûÉèÖÃÁËÁ¬½Ó³Ø£¬ÄÇÃ´Èç¹ûÁ¬½Ó³ØÖĞÈÎÒ»Á¬½Ó¿ÉÓÃ£¬¼´ÈÏÎª¿ÉÓÃ
+     * åˆ¤æ–­urlå¯¹åº”çš„è¿æ¥æ˜¯å¦å¯ç”¨ï¼Œæ³¨æ„ï¼Œå¦‚æœè®¾ç½®äº†è¿æ¥æ± ï¼Œé‚£ä¹ˆå¦‚æœè¿æ¥æ± ä¸­ä»»ä¸€è¿æ¥å¯ç”¨ï¼Œå³è®¤ä¸ºå¯ç”¨
      * 
      * @param url
-     *            ·şÎñ¶ËµÄurl£¬ĞÎÈçschema://host:portµÄ×Ö·û´®
+     *            æœåŠ¡ç«¯çš„urlï¼Œå½¢å¦‚schema://host:portçš„å­—ç¬¦ä¸²
      * @return
      */
     public boolean isConnected(String url);
 
 
     /**
-     * ¹Ø±Õurl¶ÔÓ¦µÄÁ¬½Ó
+     * å…³é—­urlå¯¹åº”çš„è¿æ¥
      * 
      * @param url
-     *            ·şÎñ¶ËµÄurl£¬ĞÎÈçschema:://host:portµÄ×Ö·û´®
+     *            æœåŠ¡ç«¯çš„urlï¼Œå½¢å¦‚schema:://host:portçš„å­—ç¬¦ä¸²
      * @param allowReconnect
-     *            ÊÇ·ñĞèÒªÖØÁ¬
+     *            æ˜¯å¦éœ€è¦é‡è¿
      * @throws NotifyRemotingException
      * 
      */
@@ -160,7 +160,7 @@ public interface RemotingClient extends RemotingController {
 
 
     /**
-     * ÉèÖÃ¿Í»§¶ËÅäÖÃ£¬Ö»ÄÜÔÚÆô¶¯Ç°ÉèÖÃ£¬Æô¶¯ºóÉèÖÃÎŞĞ§
+     * è®¾ç½®å®¢æˆ·ç«¯é…ç½®ï¼Œåªèƒ½åœ¨å¯åŠ¨å‰è®¾ç½®ï¼Œå¯åŠ¨åè®¾ç½®æ— æ•ˆ
      * 
      * @param clientConfig
      */

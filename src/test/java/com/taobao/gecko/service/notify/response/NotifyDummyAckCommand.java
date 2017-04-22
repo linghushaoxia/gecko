@@ -22,7 +22,7 @@ import com.taobao.gecko.service.notify.request.NotifyRequestCommand;
 
 
 /**
- * Dummy命令，仅用于测试
+ * Dummy鍛戒护锛屼粎鐢ㄤ簬娴嬭瘯
  * 
  * @author aoqiong
  * 

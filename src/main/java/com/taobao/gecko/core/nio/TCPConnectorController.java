@@ -129,7 +129,7 @@ public class TCPConnectorController extends SocketChannelController implements S
 
 
     /**
-     * ¶Ï¿ªÁ¬½Ó²¢ÖØÁ¬
+     * æ–­å¼€è¿æ¥å¹¶é‡è¿
      * 
      * @throws IOException
      */
@@ -147,7 +147,7 @@ public class TCPConnectorController extends SocketChannelController implements S
 
 
     /**
-     * ¶Ï¿ªµ±Ç°Á¬½Ó£¬²¢ÖØÁ¬ĞÂµØÖ·remoteAddr
+     * æ–­å¼€å½“å‰è¿æ¥ï¼Œå¹¶é‡è¿æ–°åœ°å€remoteAddr
      * 
      * @param remoteAddr
      * @throws IOException

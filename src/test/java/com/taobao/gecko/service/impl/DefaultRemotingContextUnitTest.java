@@ -40,7 +40,7 @@ import com.taobao.gecko.service.notify.NotifyCommandFactory;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-21 ÏÂÎç02:28:37
+ * @since 1.0, 2009-12-21 ä¸‹åˆ02:28:37
  */
 
 public class DefaultRemotingContextUnitTest {
@@ -105,7 +105,7 @@ public class DefaultRemotingContextUnitTest {
 
         assertNull(this.remotingContext.getConnectionsByGroup(Constants.DEFAULT_GROUP));
         assertNull(this.remotingContext.getConnectionsByGroup(groupName));
-        // ¼ÓÈëÄ¬ÈÏ·Ö×é
+        // åŠ å…¥é»˜è®¤åˆ†ç»„
         this.remotingContext.addConnection(conn);
         assertNotNull(this.remotingContext.getConnectionsByGroup(Constants.DEFAULT_GROUP));
 
@@ -113,7 +113,7 @@ public class DefaultRemotingContextUnitTest {
         assertTrue(this.remotingContext.getConnectionsByGroup(Constants.DEFAULT_GROUP).contains(conn));
         assertNull(this.remotingContext.getConnectionsByGroup(groupName));
 
-        // ¼ÓÈëgroupName
+        // åŠ å…¥groupName
         this.remotingContext.addConnectionToGroup(groupName, conn);
         assertEquals(1, this.remotingContext.getConnectionsByGroup(Constants.DEFAULT_GROUP).size());
         assertEquals(1, this.remotingContext.getConnectionsByGroup(groupName).size());
@@ -124,15 +124,15 @@ public class DefaultRemotingContextUnitTest {
         assertTrue(groupSet.contains(Constants.DEFAULT_GROUP));
         assertTrue(groupSet.contains(groupName));
 
-        // ´ÓÄ¬ÈÏ·Ö×éÒÆ³ı
+        // ä»é»˜è®¤åˆ†ç»„ç§»é™¤
         this.remotingContext.removeConnection(conn);
         assertNull(this.remotingContext.getConnectionsByGroup(Constants.DEFAULT_GROUP));
-        // ´ÓgroupNameÒÆ³ı
+        // ä»groupNameç§»é™¤
         this.remotingContext.removeConnectionFromGroup(groupName, conn);
         assertNull(this.remotingContext.getConnectionsByGroup(groupName));
         assertTrue(this.remotingContext.getGroupSet().isEmpty());
 
-        // ²âÊÔsessionµ½connµÄÓ³Éä
+        // æµ‹è¯•sessionåˆ°connçš„æ˜ å°„
         this.remotingContext.addSession2ConnectionMapping(session, conn);
         assertSame(conn, this.remotingContext.getConnectionBySession(session));
         assertSame(conn, this.remotingContext.removeSession2ConnectionMapping(session));

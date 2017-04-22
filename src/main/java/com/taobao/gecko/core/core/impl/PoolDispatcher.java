@@ -25,13 +25,13 @@ import com.taobao.gecko.core.util.WorkerThreadFactory;
 
 
 /**
- * 线程池派发器
+ * 绾跨▼姹犳淳鍙戝櫒
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 下午06:05:09
+ * @since 1.0, 2009-12-16 涓嬪崍06:05:09
  */
 public class PoolDispatcher implements Dispatcher {
     public static final int POOL_QUEUE_SIZE_FACTOR = 1000;

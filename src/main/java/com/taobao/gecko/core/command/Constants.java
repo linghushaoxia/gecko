@@ -21,22 +21,22 @@ import com.taobao.gecko.service.impl.DefaultRemotingContext;
 
 
 /**
- * ³£Á¿Öµ
+ * å¸¸é‡å€¼
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç05:54:39
+ * @since 1.0, 2009-12-16 ä¸‹åˆ05:54:39
  */
 public class Constants {
 
     /**
-     * Ä¬ÈÏ·Ö×éÃû
+     * é»˜è®¤åˆ†ç»„å
      */
     public static final String DEFAULT_GROUP = DefaultRemotingContext.class.getSimpleName()
             + "_Notify_Default_Group_Name";
-    // Á¬½ÓÊıÊôĞÔ
+    // è¿æ¥æ•°å±æ€§
     public static final String CONNECTION_COUNT_ATTR = DefaultRemotingClient.class.getName()
             + "_Notify_Remoting_ConnCount";
 

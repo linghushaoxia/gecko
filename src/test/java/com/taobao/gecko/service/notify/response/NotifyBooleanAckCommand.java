@@ -27,11 +27,11 @@ import com.taobao.gecko.service.notify.request.NotifyRequestCommandHeader;
 
 /**
  * 
- * 响应成功或者失败的应答，如果失败，可能body带有错误信息
+ * 鍝嶅簲鎴愬姛鎴栬�呭け璐ョ殑搴旂瓟锛屽鏋滃け璐ワ紝鍙兘body甯︽湁閿欒淇℃伅
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-17 下午07:38:13
+ * @since 1.0, 2009-12-17 涓嬪崍07:38:13
  */
 
 public class NotifyBooleanAckCommand extends NotifyResponseCommand implements BooleanAckCommand {
@@ -74,7 +74,7 @@ public class NotifyBooleanAckCommand extends NotifyResponseCommand implements Bo
             this.opCode = ((NotifyRequestCommandHeader) header).getOpCode();
         }
         else {
-            // remoting自身返回的header，可能没有设置opcode，那么默认设置为dummy
+            // remoting鑷韩杩斿洖鐨刪eader锛屽彲鑳芥病鏈夎缃畂pcode锛岄偅涔堥粯璁よ缃负dummy
             this.opCode = OpCode.DUMMY;
         }
         this.opaque = header.getOpaque();

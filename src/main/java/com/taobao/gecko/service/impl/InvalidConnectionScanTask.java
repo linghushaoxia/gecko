@@ -22,14 +22,14 @@ import com.taobao.gecko.service.Connection;
 
 
 /**
- * É¨ÃèÎÞÐ§µÄÁ¬½ÓÈÎÎñ£¬½öÓÃÓÚ·þÎñÆ÷
+ * æ‰«ææ— æ•ˆçš„è¿žæŽ¥ä»»åŠ¡ï¼Œä»…ç”¨äºŽæœåŠ¡å™¨
  * 
  * @author boyan
  * @Date 2010-5-26
  * 
  */
 public class InvalidConnectionScanTask implements ScanTask {
-    // ¶ÔÓÚ·þÎñÆ÷À´Ëµ£¬Èç¹û5·ÖÖÓÃ»ÓÐÈÎºÎ²Ù×÷£¬ÄÇÃ´½«¶Ï¿ªÁ¬½Ó£¬ÒòÎª¿Í»§¶Ë×ÜÊÇ»á·¢ÆðÐÄÌø¼ì²â£¬Òò´Ë²»»á¶ÔÕý³£µÄ¿ÕÏÐÁ¬½ÓÎóÅÐ¡£
+    // å¯¹äºŽæœåŠ¡å™¨æ¥è¯´ï¼Œå¦‚æžœ5åˆ†é’Ÿæ²¡æœ‰ä»»ä½•æ“ä½œï¼Œé‚£ä¹ˆå°†æ–­å¼€è¿žæŽ¥ï¼Œå› ä¸ºå®¢æˆ·ç«¯æ€»æ˜¯ä¼šå‘èµ·å¿ƒè·³æ£€æµ‹ï¼Œå› æ­¤ä¸ä¼šå¯¹æ­£å¸¸çš„ç©ºé—²è¿žæŽ¥è¯¯åˆ¤ã€‚
     public static long TIMEOUT_THRESHOLD = Long.parseLong(System.getProperty(
         "notify.remoting.connection.timeout_threshold", "300000"));
     static final Log log = LogFactory.getLog(InvalidConnectionScanTask.class);
@@ -38,12 +38,12 @@ public class InvalidConnectionScanTask implements ScanTask {
     public void visit(final long now, final Connection conn) {
         final long lastOpTimestamp = ((DefaultConnection) conn).getSession().getLastOperationTimeStamp();
         if (now - lastOpTimestamp > TIMEOUT_THRESHOLD) {
-            log.info("ÎÞÐ§µÄÁ¬½Ó" + conn.getRemoteSocketAddress() + "±»¹Ø±Õ£¬³¬¹ý" + TIMEOUT_THRESHOLD + "ºÁÃëÃ»ÓÐÈÎºÎIO²Ù×÷");
+            log.info("æ— æ•ˆçš„è¿žæŽ¥" + conn.getRemoteSocketAddress() + "è¢«å…³é—­ï¼Œè¶…è¿‡" + TIMEOUT_THRESHOLD + "æ¯«ç§’æ²¡æœ‰ä»»ä½•IOæ“ä½œ");
             try {
                 conn.close(false);
             }
             catch (final Throwable t) {
-                log.error("¹Ø±ÕÁ¬½ÓÊ§°Ü", t);
+                log.error("å…³é—­è¿žæŽ¥å¤±è´¥", t);
             }
         }
     }

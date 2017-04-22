@@ -54,7 +54,7 @@ public final class MyMBeanServer {
 
 
     public void registMBean(final Object o, final String name) {
-        // ×¢²áMBean
+        // æ³¨å†ŒMBean
         if (null != this.mbs) {
             try {
                 this.mbs.registerMBean(o, new ObjectName(o.getClass().getPackage().getName() + ":type="
@@ -69,7 +69,7 @@ public final class MyMBeanServer {
 
 
     public void registerMBeanWithId(final Object o, final String id) {
-        // ×¢²áMBean
+        // æ³¨å†ŒMBean
         if (null == id || id.length() == 0) {
             throw new IllegalArgumentException("must set id");
         }
@@ -122,7 +122,7 @@ public final class MyMBeanServer {
 
 
     public void registerMBeanWithIdPrefix(final Object o, String idPrefix) {
-        // ×¢²áMBean
+        // æ³¨å†ŒMBean
         if (null != this.mbs) {
             if (null == idPrefix || idPrefix.length() == 0) {
                 idPrefix = "default";

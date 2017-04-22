@@ -18,11 +18,11 @@ package com.taobao.gecko.core.command;
 /**
  * 
  * 
- * ÃüÁîµÄ±ê¼Ç½Ó¿Ú
+ * å‘½ä»¤çš„æ ‡è®°æ¥å£
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-18 ÉÏÎç11:28:14
+ * @since 1.0, 2009-12-18 ä¸Šåˆ11:28:14
  */
 
 public interface Command {

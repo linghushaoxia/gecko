@@ -16,7 +16,7 @@
 package com.taobao.gecko.core.nio.impl;
 
 /**
- * ¶¨Ê±Æ÷ÊÂ¼şÒıÓÃ
+ * å®šæ—¶å™¨äº‹ä»¶å¼•ç”¨
  * 
  * @author dennis
  * 

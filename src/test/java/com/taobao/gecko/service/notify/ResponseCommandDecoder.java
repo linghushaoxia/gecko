@@ -28,12 +28,12 @@ import com.taobao.gecko.service.notify.response.NotifyResponseCommand;
 
 /**
  * 
- * Ó¦´ğÃüÁî½âÂëÆ÷
+ * åº”ç­”å‘½ä»¤è§£ç å™¨
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç05:53:55
+ * @since 1.0, 2009-12-16 ä¸‹åˆ05:53:55
  */
 
 public class ResponseCommandDecoder implements CodecFactory.Decoder {
@@ -89,7 +89,7 @@ public class ResponseCommandDecoder implements CodecFactory.Decoder {
     private void decodeHeader(final IoBuffer in, final Session session, final DecoderState decoderState) {
         final byte magic = in.get();
         if (magic != Constants.RESPONSE_MAGIC) {
-            log.error("Ó¦´ğÃüÁîµÄmagicÊıÖµ´íÎó,expect " + Constants.RESPONSE_MAGIC + ",real " + magic);
+            log.error("åº”ç­”å‘½ä»¤çš„magicæ•°å€¼é”™è¯¯,expect " + Constants.RESPONSE_MAGIC + ",real " + magic);
             session.close();
             return;
         }

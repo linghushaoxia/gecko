@@ -22,13 +22,13 @@ import com.taobao.gecko.core.buffer.IoBuffer;
 
 
 /**
- * Shift orËã·¨µÄÆ¥ÅäÊµÏÖ
+ * Shift orç®—æ³•çš„åŒ¹é…å®ç°
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:22:44
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:22:44
  */
 public class ShiftOrByteBufferMatcher implements ByteBufferMatcher {
 
@@ -48,7 +48,7 @@ public class ShiftOrByteBufferMatcher implements ByteBufferMatcher {
 
 
     /**
-     * Ô¤´¦Àí
+     * é¢„å¤„ç†
      * 
      * @param pat
      */

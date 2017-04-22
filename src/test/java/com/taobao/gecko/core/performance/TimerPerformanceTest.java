@@ -30,7 +30,7 @@ import com.taobao.gecko.utils.ConcurrentTestTask;
 
 
 /**
- * ²âÊÔtimerĞÔÄÜ
+ * æµ‹è¯•timeræ€§èƒ½
  * 
  * @author dennis
  * 

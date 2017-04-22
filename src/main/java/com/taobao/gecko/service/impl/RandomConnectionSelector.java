@@ -26,24 +26,24 @@ import com.taobao.gecko.service.exception.NotifyRemotingException;
 
 /**
  * 
- * Á¬½ÓÑ¡ÔñÆ÷Ëæ»ú²ßÂÔ
+ * è¿æ¥é€‰æ‹©å™¨éšæœºç­–ç•¥
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-15 ÏÂÎç05:01:45
+ * @since 1.0, 2009-12-15 ä¸‹åˆ05:01:45
  */
 
 public class RandomConnectionSelector implements ConnectionSelector {
 
     /**
-     * ×î´óÖØÊÔ´ÎÊı
+     * æœ€å¤§é‡è¯•æ¬¡æ•°
      */
     private static final int MAX_TIMES = 5;
     private final Random rand = new Random();
 
 
     /**
-     * ÕâÀïµÄconnectionListÎ´×ö¿½±´±£»¤ÊÇ»ùÓÚĞÔÄÜ¿¼ÂÇ£¬Èç¹ûselectÊ§°Ü£¬Ò²ÊÇÅ×³öRuntimeÒì³£
+     * è¿™é‡Œçš„connectionListæœªåšæ‹·è´ä¿æŠ¤æ˜¯åŸºäºæ€§èƒ½è€ƒè™‘ï¼Œå¦‚æœselectå¤±è´¥ï¼Œä¹Ÿæ˜¯æŠ›å‡ºRuntimeå¼‚å¸¸
      */
     public final Connection select(final String targetGroup, final RequestCommand request,
             final List<Connection> connectionList) throws NotifyRemotingException {

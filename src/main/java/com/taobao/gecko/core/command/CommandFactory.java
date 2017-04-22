@@ -20,21 +20,21 @@ import com.taobao.gecko.core.command.kernel.HeartBeatRequestCommand;
 
 
 /**
- * Ğ­Òé¹¤³§Àà£¬ÈÎºÎĞ­ÒéµÄÊµÏÖ¶¼±ØĞëÊµÏÖ´Ë¹¤³§½Ó¿Ú£¬Ìá¹©´´½¨BooleanAckCommandºÍHeartBeatRequestCommandµÄ·½·¨
+ * åè®®å·¥å‚ç±»ï¼Œä»»ä½•åè®®çš„å®ç°éƒ½å¿…é¡»å®ç°æ­¤å·¥å‚æ¥å£ï¼Œæä¾›åˆ›å»ºBooleanAckCommandå’ŒHeartBeatRequestCommandçš„æ–¹æ³•
  * 
  * @author boyan
  * 
  */
 public interface CommandFactory {
     /**
-     * ´´½¨ÌØ¶¨ÓÚĞ­ÒéµÄBooleanAckCommand
+     * åˆ›å»ºç‰¹å®šäºåè®®çš„BooleanAckCommand
      * 
      * @param request
-     *            ÇëÇóÍ·
+     *            è¯·æ±‚å¤´
      * @param responseStatus
-     *            ÏìÓ¦×´Ì¬
+     *            å“åº”çŠ¶æ€
      * @param errorMsg
-     *            ´íÎóĞÅÏ¢
+     *            é”™è¯¯ä¿¡æ¯
      * @return
      */
     public BooleanAckCommand createBooleanAckCommand(CommandHeader request, ResponseStatus responseStatus,
@@ -42,7 +42,7 @@ public interface CommandFactory {
 
 
     /**
-     * ´´½¨ÌØ¶¨ÓÚĞ­ÒéµÄĞÄÌøÃüÁî
+     * åˆ›å»ºç‰¹å®šäºåè®®çš„å¿ƒè·³å‘½ä»¤
      * 
      * @return
      */

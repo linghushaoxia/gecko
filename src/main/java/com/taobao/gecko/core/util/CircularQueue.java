@@ -44,13 +44,13 @@ import java.util.Queue;
 
 
 /**
- * À´×ÔminaµÄÑ­»·¶ÓÁĞÊµÏÖ£¬·ÇÏß³Ì°´È«
+ * æ¥è‡ªminaçš„å¾ªç¯é˜Ÿåˆ—å®ç°ï¼Œéçº¿ç¨‹æŒ‰å…¨
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:19:56
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:19:56
  */
 public class CircularQueue<E> extends AbstractList<E> implements List<E>, Queue<E>, Serializable {
 

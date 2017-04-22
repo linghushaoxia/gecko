@@ -21,16 +21,16 @@ import java.util.Set;
 
 /**
  * 
- * ·Ö×éÁ¬½Ó¹ÜÀíÆ÷µÄMBean
+ * åˆ†ç»„è¿æ¥ç®¡ç†å™¨çš„MBean
  * 
  * @author boyan
  * 
- * @since 1.0, 2010-1-13 ÏÂÎç01:48:50
+ * @since 1.0, 2010-1-13 ä¸‹åˆ01:48:50
  */
 
 public interface GroupManagerMBean {
     /**
-     * »ñÈ¡·Ö×é¶ÔÓ¦µÄÁ¬½ÓĞÅÏ¢Ó³Éä
+     * è·å–åˆ†ç»„å¯¹åº”çš„è¿æ¥ä¿¡æ¯æ˜ å°„
      * 
      * @return
      */

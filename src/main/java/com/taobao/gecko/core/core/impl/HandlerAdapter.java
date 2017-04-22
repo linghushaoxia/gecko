@@ -23,13 +23,13 @@ import com.taobao.gecko.core.core.Session;
 
 
 /**
- * HandlerÊÊÅäÆ÷
+ * Handleré€‚é…å™¨
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:04:48
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:04:48
  */
 public class HandlerAdapter implements Handler {
     private static final Log log = LogFactory.getLog(HandlerAdapter.class);

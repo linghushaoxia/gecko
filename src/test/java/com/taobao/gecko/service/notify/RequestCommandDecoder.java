@@ -31,7 +31,7 @@ import com.taobao.gecko.service.notify.request.NotifyRequestCommand;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç05:53:03
+ * @since 1.0, 2009-12-16 ä¸‹åˆ05:53:03
  */
 
 public class RequestCommandDecoder implements CodecFactory.Decoder {
@@ -86,7 +86,7 @@ public class RequestCommandDecoder implements CodecFactory.Decoder {
     private void decodeHeader(final IoBuffer in, final Session session, final DecoderState decoderState) {
         final byte magic = in.get();
         if (magic != Constants.REQUEST_MAGIC) {
-            log.error("ÇëÇóÃüÁîµÄmagicÊıÖµ´íÎó,expect " + Constants.REQUEST_MAGIC + ",real " + magic);
+            log.error("è¯·æ±‚å‘½ä»¤çš„magicæ•°å€¼é”™è¯¯,expect " + Constants.REQUEST_MAGIC + ",real " + magic);
             session.close();
             return;
         }

@@ -27,7 +27,7 @@ import com.taobao.gecko.service.udp.UDPServiceHandler;
 
 
 /**
- * UDP¿Í»§¶ËÊµÏÖ
+ * UDPå®¢æˆ·ç«¯å®žçŽ°
  * 
  * @author boyan
  * @Date 2010-8-26

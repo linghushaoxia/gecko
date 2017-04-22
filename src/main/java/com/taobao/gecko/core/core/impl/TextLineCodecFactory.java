@@ -27,13 +27,13 @@ import com.taobao.gecko.core.util.ShiftAndByteBufferMatcher;
 
 
 /**
- * ±à½âÂë¹¤³§µÄÒ»¸öÊµÏÖ£¬ÓÃÓÚÎÄ±¾ĞĞĞ­Òé
+ * ç¼–è§£ç å·¥å‚çš„ä¸€ä¸ªå®ç°ï¼Œç”¨äºæ–‡æœ¬è¡Œåè®®
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:05:26
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:05:26
  */
 public class TextLineCodecFactory implements CodecFactory {
 

@@ -31,13 +31,13 @@ import java.util.Map.Entry;
 
 
 /**
- * ÏµÍ³¹¤¾ßÀà£¬ÓÃÓÚÅĞ¶Ïjvm°æ±¾µÈ
+ * ç³»ç»Ÿå·¥å…·ç±»ï¼Œç”¨äºåˆ¤æ–­jvmç‰ˆæœ¬ç­‰
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:23:11
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:23:11
  */
 public final class SystemUtils {
 
@@ -103,7 +103,7 @@ public final class SystemUtils {
 
 
     /**
-     * Ä¬ÈÏÎªCPU¸öÊı-1£¬ÁôÒ»¸öCPU×öÍø¿¨ÖĞ¶Ï
+     * é»˜è®¤ä¸ºCPUä¸ªæ•°-1ï¼Œç•™ä¸€ä¸ªCPUåšç½‘å¡ä¸­æ–­
      * 
      * @return
      */
@@ -121,7 +121,7 @@ public final class SystemUtils {
 
     public static Selector openSelector() throws IOException {
         Selector result = null;
-        // ÔÚlinuxÆ½Ì¨£¬¾¡Á¿ÆôÓÃepollÊµÏÖ
+        // åœ¨linuxå¹³å°ï¼Œå°½é‡å¯ç”¨epollå®ç°
         if (SystemUtils.isLinuxPlatform()) {
             try {
                 final Class<?> providerClazz = Class.forName("sun.nio.ch.EPollSelectorProvider");
@@ -170,7 +170,7 @@ public final class SystemUtils {
 
     public static boolean DEFAULT_TCP_NO_DELAY = false;
 
-    // ¾²Ì¬³õÊ¼»¯£¬È·ÈÏÄ¬ÈÏµÄtcpÑ¡Ïî²ÎÊı
+    // é™æ€åˆå§‹åŒ–ï¼Œç¡®è®¤é»˜è®¤çš„tcpé€‰é¡¹å‚æ•°
     static {
         initializeTestAddresses();
 

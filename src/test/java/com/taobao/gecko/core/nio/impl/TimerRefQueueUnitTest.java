@@ -74,7 +74,7 @@ public class TimerRefQueueUnitTest {
             this.queue.add(timerRef1);
         }
         catch (final IllegalArgumentException e) {
-            assertEquals("¶¨Ê±Æ÷ÒÑ¾­±»¼ÓÈë¶ÓÁĞ", e.getMessage());
+            assertEquals("å®šæ—¶å™¨å·²ç»è¢«åŠ å…¥é˜Ÿåˆ—", e.getMessage());
         }
 
         this.queue.remove(timerRef1);
@@ -107,7 +107,7 @@ public class TimerRefQueueUnitTest {
         this.queue.iterateQueue(new TimerQueueVisitor() {
 
             public boolean visit(final TimerRef timerRef) {
-                throw new RuntimeException("Ã»ÓĞÔªËØ¿ÉÒÔµü´ú");
+                throw new RuntimeException("æ²¡æœ‰å…ƒç´ å¯ä»¥è¿­ä»£");
             }
         });
 
@@ -135,7 +135,7 @@ public class TimerRefQueueUnitTest {
 
             public boolean visit(final TimerRef timerRef) {
                 if (timerRef.getTimeout() % 2 == 0) {
-                    throw new RuntimeException("Ã»ÓĞÉ¾³ı¸É¾»Å¼Êı");
+                    throw new RuntimeException("æ²¡æœ‰åˆ é™¤å¹²å‡€å¶æ•°");
                 }
                 return true;
             }
@@ -147,7 +147,7 @@ public class TimerRefQueueUnitTest {
         this.queue.iterateQueue(new TimerQueueVisitor() {
 
             public boolean visit(final TimerRef timerRef) {
-                throw new RuntimeException("Ã»ÓĞÔªËØ¿ÉÒÔµü´ú");
+                throw new RuntimeException("æ²¡æœ‰å…ƒç´ å¯ä»¥è¿­ä»£");
             }
         });
 
@@ -298,7 +298,7 @@ public class TimerRefQueueUnitTest {
 
     @Test
     public void testCancel() throws Exception {
-        // ²åÈë10Íò¸ö
+        // æ’å…¥10ä¸‡ä¸ª
         final int count = 100000;
         final List<TimerRef> list = new ArrayList<TimerRef>();
         for (int i = 0; i < count; i++) {
@@ -306,8 +306,8 @@ public class TimerRefQueueUnitTest {
             this.queue.add(timer);
             list.add(timer);
         }
-        // Æô¶¯101¸öÏß³Ì£¬Ò»¸öÏß³Ìµü´ú£¬100¸öÏß³ÌËæ»úÈ¡Ïû10000¸öTimerRef
-        // È·±£ÄÜµü´úµ½Î²²¿
+        // å¯åŠ¨101ä¸ªçº¿ç¨‹ï¼Œä¸€ä¸ªçº¿ç¨‹è¿­ä»£ï¼Œ100ä¸ªçº¿ç¨‹éšæœºå–æ¶ˆ10000ä¸ªTimerRef
+        // ç¡®ä¿èƒ½è¿­ä»£åˆ°å°¾éƒ¨
 
         final CyclicBarrier barrier = new CyclicBarrier(2001);
         final List<IterateThread> iterateThreads = new ArrayList<IterateThread>();

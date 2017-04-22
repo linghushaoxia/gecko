@@ -55,7 +55,7 @@ public abstract class NotifyResponseCommand implements ResponseCommand, NotifyCo
 
 
     /**
-     * 检测消息是否为boolean类型
+     * 妫�娴嬫秷鎭槸鍚︿负boolean绫诲瀷
      * 
      * @return
      */

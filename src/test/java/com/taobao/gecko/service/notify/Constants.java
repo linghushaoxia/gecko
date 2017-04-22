@@ -18,13 +18,13 @@ package com.taobao.gecko.service.notify;
 
 
 /**
- * ³£Á¿Öµ
+ * å¸¸é‡å€¼
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç05:54:39
+ * @since 1.0, 2009-12-16 ä¸‹åˆ05:54:39
  */
 public class Constants {
     public static final byte REQUEST_MAGIC = (byte) 0x80;
@@ -32,11 +32,11 @@ public class Constants {
     public static final short RESERVED = (short) 0x0000;
 
     /**
-     * ÇëÇóÍ·³¤¶È
+     * è¯·æ±‚å¤´é•¿åº¦
      */
     public static final int REQUEST_HEADER_LENGTH = 12;
     /**
-     * ÏìÓ¦Í·³¤¶È
+     * å“åº”å¤´é•¿åº¦
      */
     public static final int RESPONSE_HEADER_LENGTH = 16;
 }

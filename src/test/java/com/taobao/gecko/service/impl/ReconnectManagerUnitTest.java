@@ -42,7 +42,7 @@ import com.taobao.gecko.service.notify.NotifyWireFormatType;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-23 ÏÂÎç02:35:36
+ * @since 1.0, 2009-12-23 ä¸‹åˆ02:35:36
  */
 
 public class ReconnectManagerUnitTest {
@@ -65,7 +65,7 @@ public class ReconnectManagerUnitTest {
 
 
     @Test
-    public void testIsValidTask_ÓĞĞ§ÈÎÎñ() {
+    public void testIsValidTask_æœ‰æ•ˆä»»åŠ¡() {
         final Set<String> groupSet = new HashSet<String>();
         groupSet.add(Constants.DEFAULT_GROUP);
         groupSet.add("test-group");
@@ -76,7 +76,7 @@ public class ReconnectManagerUnitTest {
 
 
     @Test
-    public void testIsValidTask_ÎŞĞ§ÈÎÎñ_·Ö×éÎª¿Õ() {
+    public void testIsValidTask_æ— æ•ˆä»»åŠ¡_åˆ†ç»„ä¸ºç©º() {
         final Set<String> groupSet = new HashSet<String>();
         final InetSocketAddress addr = new InetSocketAddress(9001);
         final ReconnectTask task = new ReconnectTask(groupSet, addr);
@@ -85,7 +85,7 @@ public class ReconnectManagerUnitTest {
 
 
     @Test
-    public void testIsValidTask_ÎŞĞ§ÈÎÎñ_ÈÎÎñÒÑ¾­Íê³É() {
+    public void testIsValidTask_æ— æ•ˆä»»åŠ¡_ä»»åŠ¡å·²ç»å®Œæˆ() {
         final Set<String> groupSet = new HashSet<String>();
         final InetSocketAddress addr = new InetSocketAddress(9001);
         final ReconnectTask task = new ReconnectTask(groupSet, addr);
@@ -95,7 +95,7 @@ public class ReconnectManagerUnitTest {
 
 
     @Test
-    public void testIsValidTask_ÎŞĞ§ÈÎÎñ_½öÓĞÄ¬ÈÏ·Ö×é() {
+    public void testIsValidTask_æ— æ•ˆä»»åŠ¡_ä»…æœ‰é»˜è®¤åˆ†ç»„() {
         final Set<String> groupSet = new HashSet<String>();
         groupSet.add(Constants.DEFAULT_GROUP);
         final InetSocketAddress addr = new InetSocketAddress(9001);
@@ -105,7 +105,7 @@ public class ReconnectManagerUnitTest {
 
 
     @Test
-    public void testAddReconnectTask_ÓĞĞ§ÈÎÎñ_·şÎñÆ÷´æÔÚ() throws Exception {
+    public void testAddReconnectTask_æœ‰æ•ˆä»»åŠ¡_æœåŠ¡å™¨å­˜åœ¨() throws Exception {
         final ServerConfig serverConfig = new ServerConfig();
         final int port = 6859;
         serverConfig.setPort(port);
@@ -132,7 +132,7 @@ public class ReconnectManagerUnitTest {
 
 
     @Test
-    public void testAddReconnectTask_ÓĞĞ§ÈÎÎñ_·şÎñÆ÷²»´æÔÚ() throws Exception {
+    public void testAddReconnectTask_æœ‰æ•ˆä»»åŠ¡_æœåŠ¡å™¨ä¸å­˜åœ¨() throws Exception {
 
         final int port = 6860;
         final String url = "tcp://localhost:" + 6860;
@@ -152,7 +152,7 @@ public class ReconnectManagerUnitTest {
 
 
     @Test
-    public void testAddReconnectTask_ÓĞĞ§ÈÎÎñ_³¬¹ıÁ¬½ÓÊıÏŞÖÆ() throws Exception {
+    public void testAddReconnectTask_æœ‰æ•ˆä»»åŠ¡_è¶…è¿‡è¿æ¥æ•°é™åˆ¶() throws Exception {
 
         final ServerConfig serverConfig = new ServerConfig();
         final int port = 6861;
@@ -181,7 +181,7 @@ public class ReconnectManagerUnitTest {
 
 
     @Test
-    public void testAddReconnectTask_È¡ÏûÈÎÎñ() throws Exception {
+    public void testAddReconnectTask_å–æ¶ˆä»»åŠ¡() throws Exception {
 
         final int port = 6862;
 

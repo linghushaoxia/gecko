@@ -24,7 +24,7 @@ import com.taobao.gecko.core.command.Command;
  * 
  * @author boyan
  * 
- * @since 1.0, 2010-1-4 …œŒÁ10:05:36
+ * @since 1.0, 2010-1-4 ‰∏äÂçà10:05:36
  */
 
 public class DecoderState {

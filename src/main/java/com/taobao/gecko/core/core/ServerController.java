@@ -20,13 +20,13 @@ import java.net.InetSocketAddress;
 
 
 /**
- * 针对服务器的控制接口
+ * 閽堝鏈嶅姟鍣ㄧ殑鎺у埗鎺ュ彛
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 下午06:00:59
+ * @since 1.0, 2009-12-16 涓嬪崍06:00:59
  */
 public interface ServerController extends Controller {
 

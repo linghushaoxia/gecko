@@ -22,13 +22,13 @@ import com.taobao.gecko.core.core.impl.FutureImpl;
 
 
 /**
- * 发送消息包装类
+ * 鍙戦�佹秷鎭寘瑁呯被
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 下午06:02:37
+ * @since 1.0, 2009-12-16 涓嬪崍06:02:37
  */
 public interface WriteMessage {
 

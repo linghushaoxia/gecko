@@ -21,13 +21,13 @@ import com.taobao.gecko.core.core.UDPSession;
 
 
 /**
- * UDPÒµÎñ´¦ÀíÆ÷À©Õ¹
+ * UDPä¸šåŠ¡å¤„ç†å™¨æ‰©å±•
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:05:47
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:05:47
  */
 public class UDPHandlerAdapter extends HandlerAdapter {
 

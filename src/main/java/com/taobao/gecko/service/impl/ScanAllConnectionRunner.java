@@ -24,11 +24,11 @@ import com.taobao.gecko.service.Connection;
 
 /**
  * 
- * 扫描所有连接的任务线程
+ * 鎵弿鎵�鏈夎繛鎺ョ殑浠诲姟绾跨▼
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-18 下午04:18:10
+ * @since 1.0, 2009-12-18 涓嬪崍04:18:10
  */
 
 public class ScanAllConnectionRunner implements Runnable {
@@ -60,7 +60,7 @@ public class ScanAllConnectionRunner implements Runnable {
 
 
     public void run() {
-        // 获取所有连接并遍历
+        // 鑾峰彇鎵�鏈夎繛鎺ュ苟閬嶅巻
         final long now = System.currentTimeMillis();
         final List<Connection> connections =
                 this.controller.remotingContext.getConnectionsByGroup(Constants.DEFAULT_GROUP);

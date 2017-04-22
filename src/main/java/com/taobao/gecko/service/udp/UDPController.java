@@ -19,7 +19,7 @@ import com.taobao.gecko.service.exception.NotifyRemotingException;
 
 
 /**
- * UDP·şÎñ¿ØÖÆÆ÷
+ * UDPæœåŠ¡æ§åˆ¶å™¨
  * 
  * @author boyan
  * @Date 2010-8-26
@@ -27,7 +27,7 @@ import com.taobao.gecko.service.exception.NotifyRemotingException;
  */
 public interface UDPController {
     /**
-     * Æô¶¯·şÎñ
+     * å¯åŠ¨æœåŠ¡
      * 
      * @throws NotifyRemotingException
      */
@@ -35,7 +35,7 @@ public interface UDPController {
 
 
     /**
-     * ¹Ø±Õ·şÎñ
+     * å…³é—­æœåŠ¡
      * 
      * @throws NotifyRemotingException
      */
@@ -43,7 +43,7 @@ public interface UDPController {
 
 
     /**
-     * ·µ»Ø´¦ÀíÆ÷
+     * è¿”å›å¤„ç†å™¨
      * 
      * @return
      */

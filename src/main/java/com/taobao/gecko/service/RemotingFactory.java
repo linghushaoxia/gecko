@@ -24,17 +24,17 @@ import com.taobao.gecko.service.impl.DefaultRemotingServer;
 
 /**
  * 
- * Remoting¹¤³§£¬´´½¨Í¨Ñ¶²ã×é¼ş
+ * Remotingå·¥å‚ï¼Œåˆ›å»ºé€šè®¯å±‚ç»„ä»¶
  * 
  * @author boyan
  * 
- * @since 1.0, 2010-1-27 ÏÂÎç04:00:54
+ * @since 1.0, 2010-1-27 ä¸‹åˆ04:00:54
  */
 
 public final class RemotingFactory {
 
     /**
-     * ³õÊ¼»¯²¢Æô¶¯·şÎñÆ÷£¬°ó¶¨µ½Ö¸¶¨IPµØÖ·
+     * åˆå§‹åŒ–å¹¶å¯åŠ¨æœåŠ¡å™¨ï¼Œç»‘å®šåˆ°æŒ‡å®šIPåœ°å€
      * 
      * @param serverConfig
      * @return
@@ -48,7 +48,7 @@ public final class RemotingFactory {
 
 
     /**
-     * ´´½¨Ò»¸ö·şÎñÆ÷¶ÔÏó£¬²»Æô¶¯
+     * åˆ›å»ºä¸€ä¸ªæœåŠ¡å™¨å¯¹è±¡ï¼Œä¸å¯åŠ¨
      * 
      * @param serverConfig
      * @return
@@ -59,7 +59,7 @@ public final class RemotingFactory {
 
 
     /**
-     * ´´½¨Ò»¸ö¿Í»§¶Ë¶ÔÏó£¬²»Æô¶¯
+     * åˆ›å»ºä¸€ä¸ªå®¢æˆ·ç«¯å¯¹è±¡ï¼Œä¸å¯åŠ¨
      * 
      * @param clientConfig
      * @return
@@ -70,7 +70,7 @@ public final class RemotingFactory {
 
 
     /**
-     * ´´½¨Ò»¸ö¿Í»§¶Ë¶ÔÏó²¢Æô¶¯
+     * åˆ›å»ºä¸€ä¸ªå®¢æˆ·ç«¯å¯¹è±¡å¹¶å¯åŠ¨
      * 
      * @param clientConfig
      * @return

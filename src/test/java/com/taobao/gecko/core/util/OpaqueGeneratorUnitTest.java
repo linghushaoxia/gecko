@@ -28,7 +28,7 @@ import org.junit.Test;
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-23 ÏÂÎç04:18:39
+ * @since 1.0, 2009-12-23 ä¸‹åˆ04:18:39
  */
 
 public class OpaqueGeneratorUnitTest {
@@ -50,7 +50,7 @@ public class OpaqueGeneratorUnitTest {
             Assert.assertEquals(Integer.MIN_VALUE + i + 1, OpaqueGenerator.getNextOpaque());
         }
 
-        // ³¬¹ı·¶Î§£¬reset
+        // è¶…è¿‡èŒƒå›´ï¼Œreset
         OpaqueGenerator.setOpaque(Integer.MAX_VALUE - 10);
         Assert.assertEquals(Integer.MAX_VALUE - 10, OpaqueGenerator.getCurrentOpaque());
         Assert.assertEquals(Integer.MIN_VALUE, OpaqueGenerator.getNextOpaque());

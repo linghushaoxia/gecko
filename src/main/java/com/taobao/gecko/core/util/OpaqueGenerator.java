@@ -16,19 +16,19 @@
 package com.taobao.gecko.core.util;
 
 /**
- * ÃüÁîµÄopaque²úÉúÆ÷
+ * å‘½ä»¤çš„opaqueäº§ç”Ÿå™¨
  * 
  * 
  * 
  * @author boyan
  * 
- * @since 1.0, 2009-12-16 ÏÂÎç06:21:34
+ * @since 1.0, 2009-12-16 ä¸‹åˆ06:21:34
  */
 public class OpaqueGenerator {
     private static int opaque = Integer.MIN_VALUE;
 
 
-    // ½öÓÃÓÚ²âÊÔ
+    // ä»…ç”¨äºæµ‹è¯•
     synchronized static void setOpaque(int target) {
         opaque = target;
     }
@@ -42,13 +42,13 @@ public class OpaqueGenerator {
     }
 
 
-    // ½öÓÃÓÚ²âÊÔ
+    // ä»…ç”¨äºæµ‹è¯•
     public synchronized static void resetOpaque() {
         opaque = Integer.MIN_VALUE;
     }
 
 
-    // ½öÓÃÓÚ²âÊÔ
+    // ä»…ç”¨äºæµ‹è¯•
     synchronized static int getCurrentOpaque() {
         return opaque;
     }

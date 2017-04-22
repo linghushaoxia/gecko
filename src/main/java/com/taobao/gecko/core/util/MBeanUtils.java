@@ -19,7 +19,7 @@ import java.lang.reflect.Method;
 
 
 /**
- * ÓÃÓÚJMX×¢²áµÄ¹¤¾ßÀà
+ * ç”¨äºŽJMXæ³¨å†Œçš„å·¥å…·ç±»
  * 
  * @author boyan(boyan@taobao.com)
  * @date 2011-11-1
@@ -34,7 +34,7 @@ public class MBeanUtils {
             return;
         }
         boolean registered = false;
-        // ÓÅÏÈ×¢²áµ½notifyµÄMBeanServerÉÏ
+        // ä¼˜å…ˆæ³¨å†Œåˆ°notifyçš„MBeanServerä¸Š
         try {
             final Class<?> clazz = Class.forName(" com.taobao.notify.utils.MyMBeanServer");
             final Method getInstance = clazz.getMethod("getInstance");
